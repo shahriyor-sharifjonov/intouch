@@ -3,7 +3,7 @@ mixin footer()
         .popup#form 
             .popup__overlay.close-popup 
             .popup__content 
-                .form__container
+                .form__container.container
                     .form__content 
                         .form__bg 
                             img(src="@img/formbg.svg", alt="" draggable="false")
@@ -29,9 +29,42 @@ mixin footer()
                             p.form__link Нажимая на кнопку Вы даете согласие на обработку персональных данных и соглашаетесь с <a href="privacy.html">политикой конфиденциальности</a>
         .popup#product 
             .popup__overlay.close-popup 
-            .popup__content 
-                .popup__product 
-                    p hay 
+            .popup__product 
+                .popup__product-content 
+                    .popup__product-slider 
+                        .popup__product-swiper.swiper 
+                            .popup__product-wrapper.swiper-wrapper
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-1.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-2.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-1.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-2.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-1.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-2.png", alt="" draggable="false")
+                        div(class="popup__product-thumbs swiper" thumbsSlider="")
+                            .popup__product-wrapper.swiper-wrapper 
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-1.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-2.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-1.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-2.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-1.png", alt="" draggable="false")
+                                .popup__product-slide.swiper-slide 
+                                    img(src="@img/slide-2.png", alt="" draggable="false")
+                    .popup__product-info 
+                        p.popup__product-title Сенсорная панель intouch INT 55
+                        .popup__product-scroll  
+                            p.popup__product-p Диагональ экрана: 85 дюймов<br>Максимальное разрешение: 3840 х 2160 UHD 4К<br>Активный размер: 1895 × 1 066<br>Технология сенсора: Инфракрасная до 20 касаний<br>Экран: Антивандальное матовое стекло<br>Операционная система: Windows 10/ Android 9 (RAM - 3 GB DDR4. ROM- 32 GB)<br>Габаритные размеры: 1953 мм × 1152 мм × 88 мм<br>Комплектация: Пульт, Магнитные ручки, Кабель питания, Инструкция, 3х Антенная Wi-Fi, Настенное крепление
+                        button(type="button" data-target="form").open-popup.popup__product-btn Узнать цену 
         .footer__body.container
             .footer__content
                 .footer__list

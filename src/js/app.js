@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 
 gsap.registerPlugin(ScrollTrigger);
 
-import Swiper, { Navigation, Pagination, FreeMode, Autoplay } from 'swiper';
+import Swiper, { Navigation, Pagination, FreeMode, Autoplay, Thumbs } from 'swiper';
 
 import SmoothScroll from "smoothscroll-for-websites";
 
@@ -49,11 +49,15 @@ headerLinks.forEach(link => {
 
 document.querySelectorAll('.open-popup').forEach(button => {
   button.addEventListener('click', function() {
-      const targetId = button.getAttribute('data-target');
-      const popup = document.getElementById(targetId);
-      if (popup) {
-        popup.classList.add('active');
-      }
+    const popups = document.querySelectorAll('.popup.active');
+    popups.forEach(popup => {
+        popup.classList.remove('active');
+    });
+    const targetId = button.getAttribute('data-target');
+    const popup = document.getElementById(targetId);
+    if (popup) {
+      popup.classList.add('active');
+    }
   });
 });
 
@@ -65,6 +69,23 @@ document.querySelectorAll('.close-popup').forEach(button => {
       });
   });
 });
+
+var swiper = new Swiper(".popup__product-thumbs", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  modules: [FreeMode],
+  freeMode: true,
+  watchSlidesProgress: true,
+})
+
+var swiper2 = new Swiper(".popup__product-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  modules: [Thumbs],
+  thumbs: {
+    swiper: swiper,
+  },
+})
 
 if(document.querySelector('.popular__swiper')){
   new Swiper(".popular__swiper", {
