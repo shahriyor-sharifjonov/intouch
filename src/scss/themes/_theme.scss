@@ -267,3 +267,42 @@ body{
         }
     }
 }
+
+.privacy{
+    padding-top: 170px;
+    @include media(992){
+        padding-top: 183px;
+    }
+    @include media(768){
+        padding-top: 171px;
+    }
+    @include media(576){
+        padding-top: 120px;
+    }
+    &__title{
+        font-size: 48px;
+        text-align: left;
+        font-weight: 400;
+        line-height: 115%;
+        margin-bottom: 24px;
+        @include media(576){
+            font-size: 32px;
+        }
+        img{
+            margin-bottom: -4px;
+            @include media(768){
+                display: none;
+            }
+        }
+        span{
+            color: #A1A1A0;
+            &.primary{
+                color: var(--primary);
+            }
+        }
+    }
+    &__p{
+        line-height: 144%;
+        font-size: 16px;
+    }
+}
