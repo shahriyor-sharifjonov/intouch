@@ -1,0 +1,54 @@
+mixin contacts()
+    section.contacts#contacts 
+        .contacts__conainer.container 
+            h2.contacts__title <span>Как</span> с нами<br><span class="primary">связаться</span>
+            .contacts__content 
+                .contacts__info 
+                    p.contacts__subtitle Контакты 
+                    .contacts__grid 
+                        .contacts__item 
+                            .contacts__item-title 
+                                <svg width="28" height="25" viewBox="0 0 28 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.72333 11.0883C9.40333 14.39 12.11 17.085 15.4117 18.7767L17.9783 16.21C18.2933 15.895 18.76 15.79 19.1683 15.93C20.475 16.3617 21.8867 16.595 23.3333 16.595C23.975 16.595 24.5 17.12 24.5 17.7617V21.8333C24.5 22.475 23.975 23 23.3333 23C12.3783 23 3.5 14.1217 3.5 3.16667C3.5 2.525 4.025 2 4.66667 2H8.75C9.39167 2 9.91667 2.525 9.91667 3.16667C9.91667 4.625 10.15 6.025 10.5817 7.33167C10.71 7.74 10.6167 8.195 10.29 8.52167L7.72333 11.0883Z" fill="black"/>
+                                </svg>
+                                p Телефон
+                            a(href="tel:+998980009999").contacts__item-link +998 98 000-99-99
+                            a(href="tel:+998980000999").contacts__item-link +998 98 000-09-99
+                        .contacts__item 
+                            .contacts__item-title 
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_911)">
+                                    <path d="M14 13.5714C13.0528 13.5714 12.1444 13.1952 11.4746 12.5254C10.8048 11.8556 10.4286 10.9472 10.4286 10C10.4286 9.0528 10.8048 8.14439 11.4746 7.47462C12.1444 6.80485 13.0528 6.42857 14 6.42857C14.9472 6.42857 15.8556 6.80485 16.5254 7.47462C17.1952 8.14439 17.5714 9.0528 17.5714 10C17.5714 10.469 17.4791 10.9334 17.2996 11.3667C17.1201 11.8 16.857 12.1937 16.5254 12.5254C16.1937 12.857 15.8 13.1201 15.3667 13.2996C14.9334 13.4791 14.469 13.5714 14 13.5714ZM14 0C11.3478 0 8.8043 1.05357 6.92893 2.92893C5.05357 4.8043 4 7.34784 4 10C4 17.5 14 28.5714 14 28.5714C14 28.5714 24 17.5 24 10C24 7.34784 22.9464 4.8043 21.0711 2.92893C19.1957 1.05357 16.6522 0 14 0Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2_911">
+                                    <rect width="28" height="28" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                p Адрес
+                            p.contacts__item-link г. Ташкент, Юнусабадский район, 2-й проезд Турккургон 2
+                        .contacts__item 
+                            .contacts__item-title 
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.66659 23.3332C4.02492 23.3332 3.47581 23.1049 3.01925 22.6483C2.5627 22.1918 2.33403 21.6423 2.33325 20.9998V6.99984C2.33325 6.35817 2.56192 5.80906 3.01925 5.3525C3.47659 4.89595 4.0257 4.66728 4.66659 4.6665H23.3333C23.9749 4.6665 24.5244 4.89517 24.9818 5.3525C25.4391 5.80984 25.6674 6.35895 25.6666 6.99984V20.9998C25.6666 21.6415 25.4383 22.191 24.9818 22.6483C24.5252 23.1057 23.9757 23.3339 23.3333 23.3332H4.66659ZM13.9999 15.1665L23.3333 9.33317V6.99984L13.9999 12.8332L4.66659 6.99984V9.33317L13.9999 15.1665Z" fill="black"/>
+                                </svg>
+                                p Почта
+                            a(href="mailto:info@in-touch.uz").contacts__item-link info@in-touch.uz
+                        .contacts__item 
+                            .contacts__item-title 
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_925)">
+                                    <path d="M14 3C8.02857 3 3 8.02857 3 14C3 19.9714 8.02857 25 14 25C19.9714 25 25 19.9714 25 14C25 8.02857 19.9714 3 14 3ZM17.6041 18.7143L13.2143 14.3221V6.92857H14.7857V13.6716L18.7143 17.6033L17.6041 18.7143Z" fill="black"/>
+                                    <path d="M14 2C7.35 2 1.75 7.6 1.75 14.25C1.75 20.9 7.35 26.5 14 26.5C20.65 26.5 26.25 20.9 26.25 14.25C26.25 7.6 20.65 2 14 2ZM18.0136 19.5L13.125 14.6087V6.375H14.875V13.8842L19.25 18.2628L18.0136 19.5Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_2_925">
+                                    <rect width="28" height="28" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                                p Время работы
+                            p.contacts__item-link Пн–Сб : 9:00-18:00
+                .contacts__loc 
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a href="https://yandex.uz/maps/10335/tashkent/?from=mapframe&ll=69.259401%2C41.339552&mode=usermaps&source=mapframe&um=constructor%3Ade220b88fb34fdd71ebc63c5bcb74d05a54d59b01a3516a56a4e52a6695414bc&utm_medium=mapframe&utm_source=maps&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a><iframe src="https://yandex.uz/map-widget/v1/?from=mapframe&ll=69.259401%2C41.339552&mode=usermaps&source=mapframe&um=constructor%3Ade220b88fb34fdd71ebc63c5bcb74d05a54d59b01a3516a56a4e52a6695414bc&utm_source=mapframe&z=12" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>

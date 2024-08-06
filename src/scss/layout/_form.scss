@@ -1,0 +1,128 @@
+.form{
+    padding-top: 120px;
+    @include media(576){
+        padding-top: 80px;
+    }
+    &__content{
+        background: var(--primary);
+        position: relative;
+        isolation: isolate;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 100px 80px;
+        color: #fff;
+        display: flex;
+        gap: 90px;
+        @include media(1200){
+            flex-direction: column;
+            gap: 50px;
+        }
+        @include media(768){
+            padding: 30px 17px;
+            gap: 12px;
+        }
+    }
+    &__bg{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    &__title{
+        font-size: 48px;
+        line-height: 115%;
+        font-weight: 400;
+        margin-bottom: 60px;
+        max-width: 600px;
+        @include media(768){
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        @include media(576){
+            font-size: 24px;
+            max-width: 278px;   
+        }
+    }
+    &__tag{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 11px;
+        font-size: 16px;
+        color: rgba(#fff, 0.7);
+        margin-bottom: 15px;
+        @include media(576){
+            font-size: 10px;
+            gap: 5px;
+            margin-bottom: 7px;
+            svg{
+                width: 12px;
+                height: 12px;
+            }
+        }
+    }
+    &__p{
+        font-size: 16px;
+        line-height: 166%;
+        @include media(576){
+            font-size: 12px;
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @include media(576){
+            gap: 10px;
+        }
+    }
+    &__input{
+        margin-bottom: 2px;
+        background: none;
+        width: 470px;
+        height: 70px;
+        border-radius: 12px;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid rgba(#fff, 0.4);
+        color: #fff;
+        font-weight: 500;
+        @include media(1200){
+            width: 100%;
+        }
+        @include media(576){
+            height: 40px;
+            font-size: 10px;
+            padding: 10px;
+        }
+        &::placeholder{
+            color: rgba(#fff, 0.6);
+        }
+    }
+    &__btn{
+        height: 70px;
+        background: #fff;
+        border-radius: 12px;
+        color: #2F3245;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 17px;
+        @include media(576){
+            height: 40px;
+            font-size: 10px;
+            margin-top: 10px;
+        }
+    }
+    &__link{
+        text-align: center;
+        opacity: 0.7;
+        font-size: 13px;
+        line-height: 166%;
+        @include media(576){
+            font-size: 8px;
+        }
+    }
+}

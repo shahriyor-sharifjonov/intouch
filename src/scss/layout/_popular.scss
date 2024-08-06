@@ -1,0 +1,85 @@
+.popular{
+    padding-top: 80px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__slider{
+        position: relative;
+        width: 100%;
+        will-change: transform;
+    }
+    &__swiper{
+        width: 100%;
+        max-width: 100%;
+        position: relative;
+        border-radius: 20px;
+    }
+    &__wrapper{
+        width: max-content;
+        display: flex;
+    }
+    &__slide{
+        max-width: 356px;
+        @include media(768){
+            max-width: 250px;
+        }
+        &-img{
+            line-height: 0;
+            width: 100%;
+            margin-bottom: 15px;
+            img{
+                width: 100%;
+            }
+        }
+        &-title{
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 20px;
+            @include media(768){
+                font-size: 18px;
+                line-height: 140%;
+                margin-bottom: 14px;
+            }
+            @include media(576){
+                font-size: 16px;
+            }
+        }
+        &-btn{
+            background: var(--primary);
+            height: 42px;
+            border-radius: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 24px;
+            border: none;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            width: 100%;
+            transition: background 100ms ease-out;
+            &:hover{
+                background: var(--primary-hover);
+            }
+            @include media(1200){
+                height: 42px;
+                font-size: 14px;
+            }
+        }
+    }
+    &__btn{
+        font-family: "Manrope", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-top: 40px;
+        color: var(--primary);
+    }
+}

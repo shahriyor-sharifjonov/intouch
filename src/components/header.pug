@@ -1,0 +1,38 @@
+mixin header()
+    header.header 
+        .header__nav.container 
+            ul.header__list 
+                li.header__li 
+                    a(href="index.html#intro").header__link.close Главная
+                li.header__li 
+                    a(href="catalog.html").header__link.close Каталог
+                li.header__li 
+                    a(href="index.html#about").header__link.close О компании
+                li.header__li 
+                    a(href="index.html#contacts").header__link.close Контакты 
+            a(href="index.html").header__logo
+                img(src="@img/logo.svg", alt="" draggable="false")
+            .header__right
+                .header__tel
+                    a(href="tel:+998980009999") +998 98 000-99-99
+                    a(href="tel:+998980000999") +998 98 000-09-99
+                button(type="button" data-target="form").open-popup.header__btn Заказать звонок
+            button.header__button
+                span.header__button-line
+        .header__menu
+            .header__menu-container.container
+                ul.header__menu-list
+                    li.header__li 
+                        a(href="index.html#intro").header__link.close Главная
+                    li.header__li 
+                        a(href="catalog.html").header__link.close Каталог
+                    li.header__li 
+                        a(href="index.html#about").header__link.close О компании
+                    li.header__li 
+                        a(href="#contacts").header__link.close Контакты 
+                .header__menu-right 
+                    .header__tel
+                        a(href="tel:+998980009999") +998 98 000-99-99
+                        a(href="tel:+998980000999") +998 98 000-09-99
+                    button(type="button" data-target="form").open-popup.header__btn.close Заказать звонок 
+        .header__overlay 

@@ -1,0 +1,37 @@
+mixin about()
+    section.about#about
+        .about__container.container
+            h2.about__title О компании
+            .about__content
+                .about__video
+                    button(type="button" id="playButton").about__video-play
+                        <svg width="67" height="66" viewBox="0 0 67 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d_2_836)">
+                        <rect x="3.5" y="3" width="60" height="60" rx="30" fill="white"/>
+                        </g>
+                        <g clip-path="url(#clip0_2_836)">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M26.1139 24.5532C26.1454 24.2883 26.2382 24.0344 26.3851 23.8117C26.5319 23.589 26.7287 23.4036 26.9598 23.2703C27.1909 23.137 27.4498 23.0594 27.7161 23.0437C27.9825 23.0281 28.2488 23.0747 28.4939 23.1801C29.7329 23.7097 32.5095 24.9686 36.0329 27.0021C39.5574 29.0367 42.0365 30.8136 43.1134 31.6197C44.0327 32.3092 44.035 33.6766 43.1145 34.3684C42.0482 35.1699 39.5994 36.9234 36.0329 38.9837C32.4629 41.0441 29.7189 42.2877 28.4915 42.8104C27.4345 43.2619 26.2515 42.5771 26.1139 41.4372C25.9529 40.1049 25.6519 37.0797 25.6519 32.9941C25.6519 28.9107 25.9517 25.8867 26.1139 24.5532Z" fill="#297FFF"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d_2_836" x="0.5" y="0" width="66" height="66" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feMorphology radius="12" operator="erode" in="SourceAlpha" result="effect1_dropShadow_2_836"/>
+                        <feOffset/>
+                        <feGaussianBlur stdDeviation="7.5"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_836"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_836" result="shape"/>
+                        </filter>
+                        <clipPath id="clip0_2_836">
+                        <rect width="28" height="28" fill="white" transform="translate(19.5 19)"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    video(id="videoPlayer" poster="@img/poster.png")
+                        source(src="/files/intouch.mp4" type="video/mp4")
+                .about__info
+                    p.about__subtitle Intouch
+                    p.about__p Мы предлагаем максимальное удобство для пользователей с применением ориентированного на пользователя пк или андроид и предлагаем пользователям ценность надежности, основанной на точности и долговечности, добавленной к лучшей в мире технике.
+                    button(type="button" data-target="form").open-popup.about__btn Заказать звонок 
