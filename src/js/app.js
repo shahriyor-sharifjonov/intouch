@@ -94,10 +94,6 @@ if(document.querySelector('.popular__swiper')){
     modules: [FreeMode, Navigation],
     loop: true,
     freeMode: true,
-    navigation: {
-      nextEl: ".popular__next",
-      prevEl: ".popular__prev"
-    },
     breakpoints: {
       480: {
         spaceBetween: 30,
