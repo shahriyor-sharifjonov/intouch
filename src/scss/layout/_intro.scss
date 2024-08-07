@@ -54,10 +54,7 @@
             }
         }
         span{
-            color: #A1A1A0;
-            &.primary{
-                color: var(--primary);
-            }
+            color: var(--primary);
         }
     }
     &__desc{

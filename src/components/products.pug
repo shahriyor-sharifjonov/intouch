@@ -1,16 +1,10 @@
-mixin product()
-    .popular__slide.product 
+mixin product(img)
+    button(type="button" data-target="product").open-popup.popular__slide.product
         .popular__slide-img 
-            img(src="@img/slide-1.png", alt="" draggable="false")
+            img(src=`@img/${img}`, alt="" draggable="false")
+        p.popular__slide-price Цена: <span>Договорная</span>
         p.popular__slide-title Сенсорная панель intouch INT 55
-        button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
-        
-mixin product2()
-    .popular__slide.product 
-        .popular__slide-img 
-            img(src="@img/slide-2.png", alt="" draggable="false")
-        p.popular__slide-title Сенсорная панель intouch INT 55
-        button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
+        .popular__slide-btn Подробнее
 
 mixin products()
     section.products
@@ -23,38 +17,38 @@ mixin products()
                 button(type="button" data-target="content3").products__cat Мобильный стенд
                 button(type="button" data-target="content4").products__cat Процессор 
             .products__content#content1.active 
-                +product
-                +product
-                +product
-                +product
-                +product
-                +product
-                +product
-                +product
+                +product('slide-1.png')
+                +product('slide-2.png')
+                +product('slide-3.jpg')
+                +product('slide-4.jpg')
+                +product('slide-1.png')
+                +product('slide-2.png')
+                +product('slide-3.jpg')
+                +product('slide-4.jpg')
             .products__content#content2 
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
+                +product('slide-4.jpg')
+                +product('slide-1.png')
+                +product('slide-3.jpg')
+                +product('slide-2.png')
+                +product('slide-4.jpg')
+                +product('slide-1.png')
+                +product('slide-3.jpg')
+                +product('slide-2.png')
             .products__content#content3
-                +product
-                +product
-                +product
-                +product
-                +product
-                +product
-                +product
-                +product
+                +product('slide-1.png')
+                +product('slide-2.png')
+                +product('slide-3.jpg')
+                +product('slide-4.jpg')
+                +product('slide-1.png')
+                +product('slide-2.png')
+                +product('slide-3.jpg')
+                +product('slide-4.jpg')
             .products__content#content4
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
-                +product2
+                +product('slide-4.jpg')
+                +product('slide-1.png')
+                +product('slide-3.jpg')
+                +product('slide-2.png')
+                +product('slide-4.jpg')
+                +product('slide-1.png')
+                +product('slide-3.jpg')
+                +product('slide-2.png')

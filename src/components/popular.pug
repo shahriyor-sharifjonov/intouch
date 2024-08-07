@@ -1,3 +1,11 @@
+mixin product(img)
+    button(type="button" data-target="product").open-popup.swiper-slide.popular__slide 
+        .popular__slide-img 
+            img(src=`@img/${img}`, alt="" draggable="false")
+        p.popular__slide-price Цена: <span>Договорная</span>
+        p.popular__slide-title Сенсорная панель intouch INT 55
+        .popular__slide-btn Подробнее
+
 mixin popular() 
     section.popular#popular 
         .popular__container.container 
@@ -6,29 +14,12 @@ mixin popular()
             .popular__slider 
                 .swiper.popular__swiper 
                     .swiper-wrapper.popular__wrapper 
-                        .swiper-slide.popular__slide 
-                            .popular__slide-img 
-                                img(src="@img/slide-1.png", alt="" draggable="false")
-                            p.popular__slide-title Сенсорная панель intouch INT 55
-                            button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
-                        .swiper-slide.popular__slide 
-                            .popular__slide-img 
-                                img(src="@img/slide-1.png", alt="" draggable="false")
-                            p.popular__slide-title Сенсорная панель intouch INT 55
-                            button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
-                        .swiper-slide.popular__slide 
-                            .popular__slide-img 
-                                img(src="@img/slide-1.png", alt="" draggable="false")
-                            p.popular__slide-title Сенсорная панель intouch INT 55
-                            button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
-                        .swiper-slide.popular__slide 
-                            .popular__slide-img 
-                                img(src="@img/slide-1.png", alt="" draggable="false")
-                            p.popular__slide-title Сенсорная панель intouch INT 55
-                            button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
-                        .swiper-slide.popular__slide 
-                            .popular__slide-img 
-                                img(src="@img/slide-1.png", alt="" draggable="false")
-                            p.popular__slide-title Сенсорная панель intouch INT 55
-                            button(type="button" data-target="product").open-popup.popular__slide-btn Подробнее
+                        +product('slide-1.png')
+                        +product('slide-2.png')
+                        +product('slide-3.jpg')
+                        +product('slide-4.jpg')
+                        +product('slide-1.png')
+                        +product('slide-2.png')
+                        +product('slide-3.jpg')
+                        +product('slide-4.jpg')
             a(href="catalog.html").popular__btn Весь каталог 

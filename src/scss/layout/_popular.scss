@@ -25,6 +25,16 @@
     }
     &__slide{
         max-width: 356px;
+        text-align: left;
+        background: #fff;
+        box-shadow: 0 0 15px -3px #00000020;
+        border-radius: 28px;
+        padding: 15px;
+        // &:hover{
+        //     .popular__slide-title{
+        //         color: var(--primary);
+        //     }
+        // }
         @include media(768){
             max-width: 250px;
         }
@@ -32,14 +42,22 @@
             line-height: 0;
             width: 100%;
             margin-bottom: 15px;
+            width: 100%;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img{
                 width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
         &-title{
             font-size: 18px;
             line-height: 26px;
             margin-bottom: 20px;
+            transition: color 100ms ease-out;
             @include media(768){
                 font-size: 18px;
                 line-height: 140%;
@@ -47,6 +65,17 @@
             }
             @include media(576){
                 font-size: 16px;
+            }
+        }
+        &-price{
+            margin-bottom: 8px;
+            font-size: 16px; 
+            color: #00000070;
+            span{
+                color: rgb(252, 82, 48);
+            }
+            @include media(768){
+                margin-bottom: 6px;
             }
         }
         &-btn{

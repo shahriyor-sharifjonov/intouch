@@ -118,10 +118,10 @@ body{
     }
     &__content{
         flex-wrap: wrap;
-        gap: 70px 20px;
+        gap: 20px;
         display: none;
         @include media(992){
-            gap: 40px 20px;
+            gap: 20px;
         }
         &.active{
             display: flex;
@@ -295,10 +295,7 @@ body{
             }
         }
         span{
-            color: #A1A1A0;
-            &.primary{
-                color: var(--primary);
-            }
+            color: var(--primary);
         }
     }
     &__p{
