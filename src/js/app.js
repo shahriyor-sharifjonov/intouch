@@ -90,7 +90,7 @@ var swiper2 = new Swiper(".popup__product-swiper", {
 if(document.querySelector('.popular__swiper')){
   new Swiper(".popular__swiper", {
     slidesPerView: "auto",
-    spaceBetween: 40,
+    spaceBetween: 20,
     modules: [FreeMode, Navigation],
     loop: true,
     freeMode: true,
