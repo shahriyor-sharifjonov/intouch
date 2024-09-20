@@ -16,12 +16,17 @@ html(lang="en")
                     include components/about 
                     include components/mission 
                     include components/product 
-                    include components/whyus 
+                    include components/whyus
                     +hero
                     +about
                     +mission
                     +product
                     +whyus
+                include components/partners
+                +partners
+                .container 
+                    include components/contact
+                    +contact
             include components/footer 
             +footer
         script(src="js/app.min.js") 

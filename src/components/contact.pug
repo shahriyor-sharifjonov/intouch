@@ -1,0 +1,31 @@
+mixin contact()
+    .contact 
+        .contact__topbar
+            span Контакты
+        div.contact__main 
+            .contact__map
+                iframe(
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2276574015393!2d144.95872931531552!3d-37.81735697975198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57776fb7ef72e1a!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1630049958430!5m2!1sen!2sau",
+                    width="600",
+                    height="450",
+                    style="border:0;",
+                    allowfullscreen="",
+                    loading="lazy"
+                )
+            form(action="").contact__form
+                div.contact__form-label
+                    label Имя 
+                    input(type="text",  placeholder="Поле для ввода")
+                div.contact__form-label
+                    label Контактный номер 
+                    input(type="text",  placeholder="+99890 123 45 67")
+                div.contact__form-label
+                    label Электронная почта 
+                    input(type="email",  placeholder="Напишите почту")
+                div.contact__form-check
+                    input(type="checkbox")
+                    div
+                        p Я даю согласие на обработку
+                        a(href="#") персональных данных
+                button.contact__form-btn Оставить заявку
+            

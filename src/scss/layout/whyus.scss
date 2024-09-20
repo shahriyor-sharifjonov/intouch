@@ -21,4 +21,76 @@
             @include res("padding-right", 16px);
         }
     }
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        @include res("gap", 12px);
+    }
+
+    &__card {
+        @include res("width", 390px);
+        @include res("padding-top", 36px);
+        @include res("padding-left", 34px);
+        @include res("padding-bottom", 36px);
+        @include res("padding-right", 34px);
+        @include res("border-radius", 32px);
+        color: #152040;
+        background: $white;
+    }
+
+    &__card-title {
+        font-weight: 500;
+        @include res("margin-bottom", 32px);
+        @include res("font-size", 32px);
+        @include res("line-height", 40px);
+    }
+
+    &__card-text {
+        font-weight: 400;
+        @include res("margin-bottom", 27px);
+        @include res("font-size", 17px);
+        @include res("line-height", 24px);
+    }
+
+    &__card-info {
+        display: flex;
+        align-items: center;
+
+        img {
+            @include res("width", 28px);
+            @include res("width", 28px);
+            @include res("margin-right", 12px);
+        }
+
+        span {
+            font-weight: 400;
+            @include res("font-size", 17px);
+            @include res("line-height", 24px);
+        }
+    }
+
+    &__card-info:not(:last-child) {
+        @include res("margin-bottom", 18px);
+    }
+
+    &__card-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        @include res("margin-top", 37px);
+
+        img {
+            @include res("width", 28px);
+            @include res("width", 28px);
+            @include res("margin-right", 12px);
+        }
+
+        span {
+            font-weight: 400;
+            @include res("font-size", 17px);
+            @include res("line-height", 21px);
+            color: rgba(43, 115, 220, 1);
+        }
+    }
 }
