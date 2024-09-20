@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240920151505">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240920164350">
     <title>Document</title>
   </head>
   <body> 
@@ -12,7 +12,7 @@
             <header class="header">
               <div class="container">
                 <div class="header__main">
-                  <div class="header__inner"> <img src="img/logowhite.svg" alt="logo">
+                  <div class="header__inner"> <a href="#"> <img class="header__logo" src="img/logowhite.svg" alt="logo" draggable="false"></a>
                     <nav class="header__nav"><a href="#">Продуктыa</a><a href="#">О компании</a><a href="#">Контакты</a></nav>
                   </div>
                   <button class="header__btn">Заказать звонок</button>
@@ -32,14 +32,14 @@
                         </div>
                         <p class="hero__title-text">только с нами</p>
                       </div>
-                      <div class="hero__main"><picture><source srcset="img/image.webp" type="image/webp"><img class="hero__main-img" src="img/image.webp" alt=""></picture>
+                      <div class="hero__main"><picture><source srcset="img/image.webp" type="image/webp"><img class="hero__main-img" src="img/image.webp" alt="" draggable="false"></picture>
                         <div class="hero__main-inner">
-                          <div class="hero__main-users"><img src="img/Frame 2087325814.webp" alt="">
+                          <div class="hero__main-users"><picture><source srcset="img/people.webp" type="image/webp"><img src="img/people.png" alt="" draggable="false"></picture>
                             <div> 
                               <p>12 000 +</p><span>Довольных клиентов</span>
                             </div>
                           </div>
-                          <div class="hero__main-info"><img src="img/image (3).png" alt="IMG">
+                          <div class="hero__main-info"><img src="img/image (3).png" alt="IMG" draggable="false">
                             <p>Более 100 видов мониторов</p>
                           </div>
                         </div>
@@ -48,40 +48,45 @@
                     <div class="about"> 
                       <div class="about__topbar"><span>O компании</span><a href="#">Посмотреть каталог<img src="img/arrow-right.svg" alt="arrow"></a></div>
                       <div class="about__main"> 
-                        <div class="about__main-top">
-                          <p class="about__main-top-text">Вся наша продукция прошла обязательную <span class="about__main-subtext">сертификацию</span> и соответствует самым <span class="about__main-subtext">высоким</span> стандартам</p>
-                          <div class="about__main-card"><img src="img/Mask group.png" alt="">
-                            <p>Информационные киоски</p>
-                          </div>
+                        <p class="about__main-item">Вся наша продукция прошла обязательную <span class="about__main-subtext">сертификацию</span> и соответствует самым <span class="about__main-subtext">высоким</span> стандартам</p>
+                        <div class="about__main-item"><img class="about__main-card-img" src="img/Mask group.png" alt="">
+                          <p>Информационные киоски                </p>
                         </div>
-                        <div class="about__main-bottom">
-                          <div class="about__main-card"><picture><source srcset="img/laptop2.webp" type="image/webp"><img src="img/laptop2.png" alt=""></picture>
-                            <p>Сенсорные панели</p>
-                          </div>
-                          <div class="about__main-card"><picture><source srcset="img/laptop3.webp" type="image/webp"><img src="img/laptop3.png" alt=""></picture>
-                            <p>INtel core процессоры</p>
-                          </div>
-                          <div class="about__main-card"><picture><source srcset="img/laptop4.webp" type="image/webp"><img src="img/laptop4.png" alt=""></picture>
-                            <p>Мобильные стенды</p>
-                          </div>
+                        <div class="about__main-item"><picture><source srcset="img/laptop2.webp" type="image/webp"><img class="about__main-card-img" src="img/laptop2.png" alt=""></picture>
+                          <p>Сенсорные панели</p>
+                        </div>
+                        <div class="about__main-item"><picture><source srcset="img/laptop3.webp" type="image/webp"><img class="about__main-card-img" src="img/laptop3.png" alt=""></picture>
+                          <p>INtel core процессоры</p>
+                        </div>
+                        <div class="about__main-item"><picture><source srcset="img/laptop4.webp" type="image/webp"><img class="about__main-card-img" src="img/laptop4.png" alt=""></picture>
+                          <p>Мобильные стенды</p>
                         </div>
                       </div>
                     </div>
                     <div class="mission"> 
-                      <div class="mission__topbar"><span>Миссия компании</span><a href="#">Подробнее<img src="img/arrow-right.svg" alt="arrow"></a></div>
+                      <div class="mission__topbar"><span>Миссия компании</span><a href="#">Подробнее<img src="img/arrow-right.svg" alt="arrow" draggable="false"></a></div>
                       <div class="mission__main"> 
-                        <video src=""> 
-                          <div class="mission__main-card"><img src="../assets/imgs/Mask group.png" alt="">
-                            <p>Сенсорные панели</p>
-                          </div>
-                          <div class="mission__main-card"><img src="../assets/imgs/Mask group.png" alt="">
-                            <p>INtel core процессоры</p>
-                          </div>
-                          <div class="mission__main-card"><img src="../assets/imgs/Mask group.png" alt="">
-                            <p>Мобильные стенды</p>
-                          </div>
-                        </video>
+                        <div class="mission__main-video"><picture><source srcset="img/missionbg.webp" type="image/webp"><img class="mission__main-img" src="img/missionbg.webp" alt="" draggable="false"></picture>
+                          <button class="mission__main-play"><picture><source srcset="img/play.webp" type="image/webp"><img src="img/play.png" alt="" draggable="false"></picture></button>
+                        </div>
+                        <p class="mission__main-text">Мы предлагаем максимальное удобство для пользователей с применением ориентированного на пользователя пк или андроид и предлагаем пользователям ценность надежности, основанной на точности и долговечности, добавленной к лучшей в мире технике.</p>
                       </div>
+                    </div>
+                    <div class="product"> 
+                      <div class="product__topbar"><span>Продукты</span></div>
+                      <div class="product__main"> 
+                        <div class="product__main-item"><picture><source srcset="img/pr1.webp" type="image/webp"><img src="img/pr1.png" alt="" draggable="false"></picture></div>
+                        <div class="product__main-item"><picture><source srcset="img/pr2.webp" type="image/webp"><img src="img/pr2.png" alt="" draggable="false"></picture></div>
+                        <div class="product__main-item"><picture><source srcset="img/pr3.webp" type="image/webp"><img src="img/pr3.png" alt="" draggable="false"></picture></div>
+                        <div class="product__main-item"><picture><source srcset="img/pr4.webp" type="image/webp"><img src="img/pr4.png" alt="" draggable="false"></picture>
+                          <div> <img src="../img/product.svg" alt="" draggable="false">
+                            <p>Узнать больше</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="whyus"> 
+                      <div class="whyus__topbar"><span>Почему мы?</span></div>
                     </div>
         </div>
       </main>
@@ -91,6 +96,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20240920151505"> </script>
+    <script src="js/app.min.js?_v=20240920164350"> </script>
   </body>
 </html>
