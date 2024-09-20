@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
+const PluginError = 'plugin-error';
 
 global.app = {
     isBuild: process.argv.includes('--build'),
@@ -22,6 +23,19 @@ import { svgSprive } from "./gulp/tasks/svgSprive.js";
 import { zip } from "./gulp/tasks/zip.js";
 
 // Наблюдатель за изменениями в файлах
+
+gulp.task('html', function() {
+    return gulp.src('src/*.html')
+        .pipe(through.obj(function (file, enc, cb) {
+            if (file.isNull()) {
+                cb(new PluginError('html', 'File is null!'));
+                return;
+            }
+            cb(null, file);
+        }))
+        .pipe(gulp.dest('dist/'));
+});
+
 function watcher() {
     gulp.watch(path.watch.files, copy);
     gulp.watch(path.watch.html, html);

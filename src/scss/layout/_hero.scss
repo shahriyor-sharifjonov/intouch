@@ -1,0 +1,112 @@
+.hero {
+    @include res("margin-top", 110px);
+    @include res("margin-bottom", 110px);
+    &__title {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inner {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__inner-text {
+        font-weight: 500;
+        @include res("font-size", 76px);
+    }
+    &__inner-subtext {
+        font-weight: 500;
+        @include res("font-size", 76px);
+        @include res("margin-left", 16px);
+        color: #297fff;
+    }
+
+    &__inner-info {
+        @include res("width", 260px);
+        @include res("font-size", 16px);
+        @include res("line-height", 18px);
+        @include res("margin-left", 22px);
+        text-align: left;
+    }
+
+    &__title-text {
+        font-weight: 500;
+        @include res("font-size", 76px);
+        text-align: end;
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        @include res("gap", 12px);
+        @include res("margin-top", 48px);
+    }
+
+    &__main-img {
+        @include res("width", 822px);
+        @include res("height", 440px);
+        @include res("border-radius", 24px);
+    }
+
+    &__main-inner {
+        display: flex;
+        flex-direction: column;
+        @include res("gap", 12px);
+    }
+
+    &__main-users {
+        @include res("width", 360px);
+        @include res("height", 128px);
+        display: flex;
+        align-items: center;
+        @include res("padding", 16px);
+        @include res("border-radius", 24px);
+        border: 1px solid;
+        background: linear-gradient(103.91deg, rgba(255, 255, 255, 0.176) -5.61%, rgba(255, 255, 255, 0.068) 121.64%);
+        border-image-source: linear-gradient(253.66deg, rgba(255, 255, 255, 0.384) 16.79%, rgba(255, 255, 255, 0.06) 100.15%);
+        color: $white;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            @include res("margin-left", 16px);
+
+            p {
+                @include res("font-size", 27px);
+                @include res("line-height", 32px);
+            }
+
+            span {
+                @include res("font-size", 17px);
+                @include res("line-height", 20px);
+            }
+        }
+
+        img {
+            @include res("width", 144px);
+            @include res("height", 64px);
+        }
+    }
+
+    &__main-info {
+        position: relative;
+        @include res("width", 360px);
+        @include res("height", 268px);
+        @include res("padding", 16px);
+        @include res("border-radius", 24px);
+        color: $white;
+
+        p {
+            position: absolute;
+            @include res("left", 36px);
+            @include res("bottom", 36px);
+            // @include res("width", 210px);
+            @include res("font-size", 27px);
+            font-weight: 500;
+        }
+    }
+}

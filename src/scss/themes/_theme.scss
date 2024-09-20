@@ -13,7 +13,13 @@
 html,
 body{
     height: 100%;
+    background-color: $black;
 }
+
+.d-flex {
+    display: flex;
+}
+
 .wrapper{
     min-height: 100%;
     display: flex;

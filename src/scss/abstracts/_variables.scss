@@ -16,3 +16,10 @@ $z-indexes: (
     }
     @return map-get($z-indexes, $layer);
 } 
+
+$default: #e80029;
+$white: #ffffff;
+$black: #000000;
+$beige: #FFF6F0;
+$gray: #b8b9b4;
+$grayLight: #F1F1F0;

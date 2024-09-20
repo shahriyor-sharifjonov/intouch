@@ -12,7 +12,12 @@ html(lang="en")
             +header 
             main.main 
                 .container 
-                    h1.title intouch
+                    include components/hero 
+                    include components/about 
+                    include components/mission 
+                    +hero
+                    +about
+                    +mission
             include components/footer 
             +footer
         script(src="js/app.min.js") 
