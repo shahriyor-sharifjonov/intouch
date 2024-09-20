@@ -51,4 +51,30 @@
         align-items: center;
         justify-content: center;
     }
+
+    &__inner-burger {
+        display: none;
+    }
+
+    @media screen and (max-width:480px) {
+        &__main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__nav {
+            display: none;
+        }
+        
+        &__inner-burger {
+            display: block;
+            @include res("margin-right", 68px);
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 }

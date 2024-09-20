@@ -3,9 +3,11 @@ mixin footer()
         .footer__body.container 
             div.footer__top
                 div.footer__item
-                    img(src="@img/logowhite.svg", alt="logo").footer__item-subimg
+                    a(href="#") 
+                        img(src="@img/logowhite.svg", alt="logo").footer__item-subimg
                     p.footer__item-subtext © 2019 - 2024
-                    img(src="@img/mercury.svg", alt="").footer__item-img
+                    a(href="#").footer__item-keypix
+                        img(src="@img/keypix.svg", alt="").footer__item-img
                     p.footer__item-text Разработка сайтов
                 div.footer__info
                     p.footer__info-title Меню
