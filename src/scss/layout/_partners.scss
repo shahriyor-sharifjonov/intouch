@@ -1,0 +1,38 @@
+.partners {
+    @include res("margin-bottom", 96px);
+    &__topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res("margin-bottom", 24px);
+
+        span {
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ebebeb;
+            font-weight: 400;
+            @include res("height", 44px);
+            width: auto;
+            @include res("border-radius", 44px);
+            @include res("font-size", 17px);
+            @include res("padding-left", 16px);
+            @include res("padding-right", 16px);
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res("padding-left", 37px);
+        @include res("padding-right", 37px);
+        @include res("padding-top", 24px);
+        @include res("padding-bottom", 24px);
+
+        img {
+            @include res("height", 56px);
+        }
+    }
+}

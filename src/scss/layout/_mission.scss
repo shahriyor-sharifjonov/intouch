@@ -75,6 +75,11 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+
+        img {
+            @include res("width", 64px);
+            @include res("height", 64px);
+        }
     }
 
     &__main-text {
