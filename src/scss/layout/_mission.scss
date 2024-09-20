@@ -111,7 +111,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @include res("margin-bottom", 24px);
+            margin-top: 88px;
     
             span {
                 color: $white;
@@ -147,8 +147,8 @@
             padding: 0 16px;
             border-radius: 44px;
             font-size: 17px;
-            width: 260px;
-            margin: 24px auto 32px auto;
+            width: fit-content;
+            margin: 24px auto 0 auto;
 
             img {
                  margin-left: 10px;
