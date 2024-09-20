@@ -1,4 +1,28 @@
 mixin footer()
     footer.footer   
         .footer__body.container 
-            p footer 
+            div.footer__top
+                div.footer__item
+                    img(src="@img/logowhite.svg", alt="logo").footer__item-subimg
+                    p.footer__item-subtext © 2019 - 2024
+                    img(src="@img/mercury.svg", alt="").footer__item-img
+                    p.footer__item-text Разработка сайтов
+                div.footer__info
+                    p.footer__info-title Меню
+                    a(href="#") Главная
+                    a(href="#") Каталог
+                    a(href="#") О компании
+                    a(href="#") Контакты
+                div.footer__info
+                    p.footer__info-title Соц. сети
+                    a(href="#") 
+                        img(src="@img/ri_instagram-fill.svg", alt="")
+                        p Instagram
+                    a(href="#") 
+                        img(src="@img/ri_telegram-fill.svg", alt="")
+                        p Telegram
+            .footer__bottom 
+                p Все права защищены.
+                a(href="#") Политика конфиденциальности
+                    
+                

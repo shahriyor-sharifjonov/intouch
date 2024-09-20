@@ -1,1 +1,88 @@
 // Футер
+
+.footer {
+    &__top {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        @include res("margin-right", 189px);
+    }
+
+    &__item-text {
+        color: $white;
+        font-weight: 400;
+        @include res("font-size", 14px);
+    }
+
+    &__item-subtext {
+        font-weight: 400;
+        @include res("font-size", 14px);
+        @include res("margin-top", 40px);
+        @include res("margin-bottom", 40px);
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    &__item-img {
+        @include res("width", 150px);
+        @include res("height", 27px);
+        @include res("margin-bottom", 12px);
+    }
+
+    &__item-subimg {
+        @include res("width", 50px);
+        @include res("height", 42px);
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        @include res("min-width", 148px);
+
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            @include res("font-size", 16px);
+            @include res("line-height", 17.8px);
+            display: flex;
+            align-items: center;
+
+            img {
+                @include res("width", 24px);
+                @include res("line-height", 24px);
+                @include res("margin-right", 4px);
+            }
+        }
+        a:not(:last-child) {
+            @include res("margin-bottom", 21px);
+        }
+    }
+
+    &__info:not(:last-child) {
+        @include res("margin-right", 96px);
+    }
+
+    &__info-title {
+        font-weight: 400;
+        @include res("font-size", 20px);
+        @include res("line-height", 22.8px);
+        @include res("margin-bottom", 32px);
+    }
+
+    &__bottom {
+        display: flex;
+        font-weight: 400;
+        @include res("font-size", 14px);
+        color: rgba(255, 255, 255, 0.4);
+        @include res("margin-top", 138px);
+        @include res("margin-bottom", 34px);
+
+        a {
+            text-decoration: none;
+            @include res("margin-left", 148px);
+        }
+    }
+}

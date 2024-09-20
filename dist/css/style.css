@@ -217,6 +217,110 @@
           justify-content: center;
 }
 
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 13.125vw;
+}
+
+.footer__item-text {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 0.9722222222vw;
+}
+
+.footer__item-subtext {
+  font-weight: 400;
+  font-size: 0.9722222222vw;
+  margin-top: 2.7777777778vw;
+  margin-bottom: 2.7777777778vw;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer__item-img {
+  width: 10.4166666667vw;
+  height: 1.875vw;
+  margin-bottom: 0.8333333333vw;
+}
+
+.footer__item-subimg {
+  width: 3.4722222222vw;
+  height: 2.9166666667vw;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  min-width: 10.2777777778vw;
+}
+
+.footer__info a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.1111111111vw;
+  line-height: 1.2361111111vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__info a img {
+  width: 1.6666666667vw;
+  line-height: 1.6666666667vw;
+  margin-right: 0.2777777778vw;
+}
+
+.footer__info a:not(:last-child) {
+  margin-bottom: 1.4583333333vw;
+}
+
+.footer__info:not(:last-child) {
+  margin-right: 6.6666666667vw;
+}
+
+.footer__info-title {
+  font-weight: 400;
+  font-size: 1.3888888889vw;
+  line-height: 1.5833333333vw;
+  margin-bottom: 2.2222222222vw;
+}
+
+.footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 400;
+  font-size: 0.9722222222vw;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 9.5833333333vw;
+  margin-bottom: 2.3611111111vw;
+}
+
+.footer__bottom a {
+  text-decoration: none;
+  margin-left: 10.2777777778vw;
+}
+
 .hero {
   margin-top: 7.6388888889vw;
   margin-bottom: 7.6388888889vw;
