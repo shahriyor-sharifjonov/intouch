@@ -89,6 +89,9 @@
         img {
             @include res("width", 144px);
             @include res("height", 64px);
+            object-fit: cover;
+            position: relative;
+            top: 6px;
         }
     }
 
@@ -96,7 +99,7 @@
         position: relative;
         @include res("width", 360px);
         @include res("height", 268px);
-        @include res("padding", 16px);
+        // @include res("padding", 16px);
         @include res("border-radius", 24px);
         color: $white;
 
@@ -107,6 +110,12 @@
             // @include res("width", 210px);
             @include res("font-size", 27px);
             font-weight: 500;
+        }
+
+        img {
+            @include res("width", 360px);
+            @include res("height", 268px);
+            object-fit: cover;
         }
     }
 }
