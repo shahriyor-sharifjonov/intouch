@@ -3,15 +3,11 @@ mixin mission()
         .mission__topbar
             span Миссия компании
             a(href="#") Подробнее
-                img(src="@img/arrow-right.svg", alt="arrow")
+                img(src="@img/arrow-right.svg", alt="arrow" draggable="false")
         .mission__main 
-            video(src="") 
-                .mission__main-card
-                    img(src="../assets/imgs/Mask group.png", alt="")
-                    p Сенсорные панели
-                .mission__main-card
-                    img(src="../assets/imgs/Mask group.png", alt="")
-                    p INtel core процессоры
-                .mission__main-card
-                    img(src="../assets/imgs/Mask group.png", alt="")
-                    p Мобильные стенды
+            div.mission__main-video
+                img(src="@img/missionbg.webp", alt="" draggable="false").mission__main-img
+                button.mission__main-play
+                    img(src="@img/play.png", alt="" draggable="false")
+            //- video(src="")
+            p.mission__main-text Мы предлагаем максимальное удобство для пользователей с применением ориентированного на пользователя пк или андроид и предлагаем пользователям ценность надежности, основанной на точности и долговечности, добавленной к лучшей в мире технике.

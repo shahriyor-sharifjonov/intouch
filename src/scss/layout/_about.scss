@@ -90,13 +90,10 @@
         position: relative;
         background: rgba(41, 127, 255, 1);
         color: $white;
+        overflow: hidden;
 
         img {
             position: absolute;
-            @include res("right", 1px);
-            @include res("bottom", 0px);
-            @include res("width", 247px);
-            @include res("height", 159px);
             z-index: 1;
         }
 
@@ -111,5 +108,34 @@
             @include res("width", 270px);
             z-index: 2;
         }
+    }
+
+    &__main-card-img:nth-child(1) {
+        @include res("right", 0px);
+        @include res("bottom", 0px);
+        @include res("width", 364px);
+        @include res("height", 189px);
+        object-fit: none;
+    }
+    &__main-card-img:nth-child(2) {
+        @include res("right", -52px);
+        @include res("bottom", 30px);
+        @include res("width", 247px);
+        @include res("height", 159px);
+        object-fit: none;
+    }
+    &__main-card-img:nth-child(3) {
+        @include res("right", -21px);
+        @include res("bottom", 25px);
+        @include res("width", 247px);
+        @include res("height", 159px);
+        object-fit: none;
+    }
+    &__main-card-img:nth-child(4) {
+        @include res("right", -20px);
+        @include res("bottom", 10px);
+        @include res("width", 247px);
+        @include res("height", 159px);
+        object-fit: none;
     }
 }
