@@ -1365,8 +1365,8 @@
           flex-direction: column;
   padding-top: 0.8333333333vw;
   padding-bottom: 0.8333333333vw;
-  padding-left: 1.1111111111vw;
-  padding-right: 1.1111111111vw;
+  padding-left: 0vw;
+  padding-right: 0vw;
 }
 
 .contact__form-label label {
@@ -1401,8 +1401,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1.1111111111vw;
-  padding-right: 1.1111111111vw;
+  padding-left: 0vw;
+  padding-right: 0vw;
   margin-top: 0.9375vw;
 }
 
@@ -1413,15 +1413,26 @@
   cursor: pointer;
 }
 
-.contact__form-check p {
-  font-weight: 400;
+.contact__form-check div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact__form-check p,
+.contact__form-check label {
   font-size: 0.8333333333vw;
+  font-weight: 400;
   color: #818c99;
 }
 
 .contact__form-check a {
-  font-weight: 400;
   font-size: 0.8333333333vw;
+  font-weight: 400;
   color: #818c99;
 }
 
@@ -2542,7 +2553,8 @@ body {
     line-height: 3.8265306122vw;
   }
 
-  .contact__form-check div p {
+  .contact__form-check div p,
+  .contact__form-check div label {
     font-size: 3.0612244898vw;
     line-height: 3.8265306122vw;
   }

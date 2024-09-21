@@ -24,9 +24,9 @@ mixin contact()
                     label Электронная почта 
                     input(type="email",  placeholder="Напишите почту")
                 div.contact__form-check
-                    input(type="checkbox")
+                    input(type="checkbox" id="chk")
                     div
-                        p Я даю согласие на обработку
-                        a(href="#") персональных данных
+                        label(for="chk") Я даю согласие на обработку
+                        a(href="#!") персональных данных
                 button.contact__form-btn Оставить заявку
             

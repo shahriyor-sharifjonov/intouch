@@ -62,8 +62,8 @@
         flex-direction: column;
         @include res("padding-top", 12px);
         @include res("padding-bottom", 12px);
-        @include res("padding-left", 16px);
-        @include res("padding-right", 16px);
+        @include res("padding-left", 0px);
+        @include res("padding-right", 0px);
 
         label {
             font-weight: 400;
@@ -97,8 +97,8 @@
     &__form-check {
         display: flex;
         align-items: center;
-        @include res("padding-left", 16px);
-        @include res("padding-right", 16px);
+        @include res("padding-left", 0px);
+        @include res("padding-right", 0px);
         @include res("margin-top", 13.5px);
 
         input {
@@ -108,14 +108,18 @@
             cursor: pointer;
         }
 
-        p {
-            font-weight: 400;
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        p,label {
             @include res("font-size", 12px);
+            font-weight: 400;
             color: rgba(129, 140, 153, 1);
         }
         a {
-            font-weight: 400;
             @include res("font-size", 12px);
+            font-weight: 400;
             color: rgba(129, 140, 153, 1);
         }
     }
@@ -224,7 +228,7 @@
                     @include resa('line-height', 15px);
                 }
 
-                p {
+                p,label {
                     @include resa('font-size', 12px);
                     @include resa('line-height', 15px);
                 }
