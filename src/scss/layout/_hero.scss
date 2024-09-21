@@ -187,24 +187,26 @@
 
         &__main-users {
             width: 100%;
+            @include resa('padding-left', 16px);
             @include resa('height', 128px);
             @include resa('border-radius', 24px);
             @include resa('border-width', 1px);
 
             img {
-                @include resa('width', 144px);
-                @include resa('height', 64px);
+                @include resa('width', 130px);
+                @include resa('height', 58px);
             }
 
             div {
                 @include resa('margin-left', 16px);
                 p {
+                    font-weight: 600;
                     @include resa('font-size', 27px);
                     @include resa('line-height', 32px);
                 }
     
                 span {
-                    @include resa('font-size', 17px);
+                    @include resa('font-size', 16px);
                     @include resa('line-height', 21px);
                 }
             }

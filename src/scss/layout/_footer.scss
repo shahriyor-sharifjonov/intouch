@@ -165,7 +165,7 @@
         &__mobile-links {
             display: flex;
             align-items: center;
-            gap: 24px;
+            @include resa('gap', 24px);
             @include resa('margin-top', 24px);
 
             img {
@@ -181,8 +181,8 @@
             align-items: center;
 
             img {
-                width: 150px;
-                height: 26px;
+                @include resa('height', 26px);
+                @include resa('width', 150px);
             }
 
             p {
