@@ -1,0 +1,62 @@
+// Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+html,
+body{
+    height: 100%;
+    background-color: $black;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    .main{
+        flex: 1 1 auto;
+    }
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    @include res('width', 1194px);
+    @include media(576){
+        @include resa('width', 360px);
+    }
+}
+.title{
+    @include res('font-size', 32px);
+    @include media(576){
+        @include resa('font-size', 24px);
+    }
+}
