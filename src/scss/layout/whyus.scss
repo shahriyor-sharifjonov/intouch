@@ -73,7 +73,8 @@
         text-transform: uppercase;
         font-weight: 600;
         @include res("margin-bottom", 32px);
-        @include res("font-size", 32px);
+        @include res("font-size", 30px);
+        @include res('letter-spacing', -1px);
         @include res("line-height", 40px);
         @include media(576){
             color: #2B73DC;

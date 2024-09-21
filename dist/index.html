@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240921234232">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240921234827">
     <title>Document</title>
   </head>
   <body> 
     <div class="wrapper"> 
-            <header class="header">
+            <header class="header" id="main">
               <div class="container">
                 <div class="header__main">
                   <div class="header__inner"> 
@@ -22,7 +22,7 @@
             </header>
       <main class="main"> 
         <div class="container"> 
-                    <div class="hero">
+                    <div class="hero" id="intro">
                       <div class="hero__title">
                         <div class="hero__inner">
                           <div class="hero__inner-content">
@@ -48,7 +48,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="about"> 
+                    <div class="about" id="about"> 
                       <div class="about__topbar"><span>O компании</span><a href="#!">Посмотреть каталог<img src="img/arrow-right.svg" alt="arrow" draggable="false"></a></div>
                       <div class="about__main"> 
                         <p class="about__main-item">Вся наша продукция прошла обязательную <span class="about__main-subtext">сертификацию</span> и соответствует самым <span class="about__main-subtext">высоким</span> стандартам</p><a class="about__more" href="#!">Посмотреть каталог<img src="img/arrow-right.svg" alt="arrow" draggable="false"></a>
@@ -156,7 +156,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="contact"> 
+                    <div class="contact" id="contacts">
                       <div class="contact__topbar"><span>Контакты</span></div>
                       <div class="contact__main"> 
                         <div class="contact__map">
@@ -190,12 +190,12 @@
             <footer class="footer">  
               <div class="footer__body container"> 
                 <div class="footer__top">
-                  <div class="footer__item"><a href="#!"> <img class="footer__item-subimg" src="img/logowhite.svg" alt="logo" draggable="false"></a>
+                  <div class="footer__item"><a href="index.html#main"> <img class="footer__item-subimg" src="img/logowhite.svg" alt="logo" draggable="false"></a>
                     <p class="footer__item-subtext">© 2019 - 2024</p><a class="footer__item-keypix" href="#!"><img class="footer__item-img" src="img/keypix.svg" alt="" draggable="false"></a>
                     <p class="footer__item-text">Разработка сайтов</p>
                   </div>
                   <div class="footer__info">
-                    <p class="footer__info-title">Меню</p><a href="#!">Главная</a><a href="#!">Каталог</a><a href="#!">О компании</a><a href="#!">Контакты</a>
+                    <p class="footer__info-title">Меню</p><a href="index.html#main">Главная</a><a href="#!">Каталог</a><a href="index.html#about">О компании</a><a href="index.html#contacts">Контакты</a>
                   </div>
                   <div class="footer__info">
                     <p class="footer__info-title">Соц. сети</p><a href="https://instagram.com/intouch.uz" target="_blank"> <img src="img/ri_instagram-fill.svg" alt="" draggable="false">
@@ -226,6 +226,6 @@
               </div>
             </footer>
     </div>
-    <script src="js/app.min.js?_v=20240921234232"> </script>
+    <script src="js/app.min.js?_v=20240921234827"> </script>
   </body>
 </html>

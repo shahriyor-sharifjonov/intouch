@@ -1,4 +1,5 @@
 .contact {
+    @include res('padding-top', 96px);
     @include res("margin-bottom", 96px);
     &__topbar {
         display: flex;
@@ -138,6 +139,7 @@
     }
 
     @media screen and (max-width:576px) {
+        @include resa('padding-top', 0px);
         &__topbar {
             display: flex;
             align-items: center;
