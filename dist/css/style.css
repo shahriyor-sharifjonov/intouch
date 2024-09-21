@@ -430,11 +430,11 @@
           align-items: center;
   padding: 1.1111111111vw;
   border-radius: 1.6666666667vw;
-  border: 1px solid;
+  border: solid #ffffff90;
   overflow: hidden;
   background: -o-linear-gradient(346.09deg, rgba(255, 255, 255, 0.176) -5.61%, rgba(255, 255, 255, 0.068) 121.64%);
   background: linear-gradient(103.91deg, rgba(255, 255, 255, 0.176) -5.61%, rgba(255, 255, 255, 0.068) 121.64%);
-  border-image-source: linear-gradient(253.66deg, rgba(255, 255, 255, 0.384) 16.79%, rgba(255, 255, 255, 0.06) 100.15%);
+  border-width: 0.0694444444vw;
   color: #ffffff;
 }
 
