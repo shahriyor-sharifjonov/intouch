@@ -138,21 +138,24 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 88px;
+            @include resa('margin-top', 88px);
     
             span {
                 color: $white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid #ebebeb;
+                border: solid #ebebeb;
                 font-weight: 400;
-                height: 44px;
                 width: auto;
+                @include resa('border-width', 1px);
+                @include resa('height', 44px);
                 @include resa('border-radius', 44px);
                 @include resa('font-size', 17px);
-                padding: 0 16px;
-                margin-bottom: 16px;
+                padding: 0;
+                @include resa('margin-bottom', 16px);
+                @include resa('padding-left', 16px);
+                @include resa('padding-right', 16px);
             }
     
             a {
@@ -162,69 +165,81 @@
 
         &__main {
             flex-direction: column-reverse;
-            gap: 12px;
+            @include resa('gap', 12px);
         }
 
         &__form {
-            padding: 16px 20px;
             width: 100%;
-            min-height: 440px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include resa('padding-top', 30px);
+            @include resa('padding-bottom', 36px);
+            @include resa('padding-left', 20px);
+            @include resa('padding-right', 20px);
+            @include resa('min-height', 440px);
             @include resa('border-radius', 24px);
         }
 
         &__form-label {
-            padding: 12px 16px;
+            @include resa('padding-top', 12px);
+            @include resa('padding-bottom', 12px);
+            @include resa('padding-left', 0px);
+            @include resa('padding-right', 0px);
 
             label {
                 @include resa('font-size', 14px);
-                margin-bottom: 8px;
-                line-height: 18px;
+                @include resa('margin-bottom', 8px);
+                @include resa('line-height', 18px);
             }
 
             input {
                 @include resa('font-size', 15px);
-                height: 40px;
-                padding: 10px 12px;
+                @include resa('padding-top', 10px);
+                @include resa('padding-bottom', 10px);
+                @include resa('padding-left', 12px);
+                @include resa('padding-right', 12px);
+                @include resa('height', 40px);
                 @include resa('border-radius', 8px);
             }
         }
 
         &__form-check {
-            padding: 12px 16px;
+            @include resa('padding-top', 12px);
+            @include resa('padding-bottom', 12px);
+            @include resa('padding-left', 0px);
+            @include resa('padding-right', 0px);
 
             input {
-                width: 20px;
-                height: 20px;
-                margin-right: 10px;
+                @include resa('width', 20px);
+                @include resa('height', 20px);
+                @include resa('margin-right', 10px);
             }
 
             div {
                 @include resa('font-size', 12px);
-                line-height: 15px;
+                @include resa('line-height', 15px);
                 a {
                     @include resa('font-size', 12px);
-                    line-height: 15px;
+                    @include resa('line-height', 15px);
                 }
 
                 p {
                     @include resa('font-size', 12px);
-                    line-height: 15px;
+                    @include resa('line-height', 15px);
                 }
             }
         }
 
         &__form-btn {
-            font-size: 17px;
-            height: 56px;
+            @include resa('font-size', 17px);
+            @include resa('height', 56px);
             @include resa('border-radius', 16px);
         }
 
         &__map {
             width: 100%;
-            height: 440px;
+            @include resa('height', 440px);
             @include resa('border-radius', 24px);
 
             iframe {
