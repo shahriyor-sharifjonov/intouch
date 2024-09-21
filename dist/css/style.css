@@ -464,8 +464,6 @@
   height: 4.4444444444vw;
   -o-object-fit: cover;
      object-fit: cover;
-  position: relative;
-  top: 6px;
 }
 
 .hero__main-info {

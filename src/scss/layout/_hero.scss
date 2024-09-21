@@ -95,8 +95,6 @@
             @include res("width", 144px);
             @include res("height", 64px);
             object-fit: cover;
-            position: relative;
-            top: 6px;
         }
     }
 
