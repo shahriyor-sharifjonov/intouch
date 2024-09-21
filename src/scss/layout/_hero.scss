@@ -1,5 +1,5 @@
 .hero {
-    @include res("margin-top", 80px);
+    @include res("margin-top", 50px);
     @include res("margin-bottom", 110px);
     &__title {
         color: $white;
