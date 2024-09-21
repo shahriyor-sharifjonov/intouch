@@ -1975,7 +1975,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    gap: 12px;
+    gap: 3.0612244898vw;
     width: 100%;
   }
 
@@ -1989,7 +1989,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 88px;
+    margin-top: 22.4489795918vw;
   }
 
   .mission__topbar span {
@@ -2003,14 +2003,16 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    border: 1px solid #ebebeb;
+    border: solid #ebebeb;
     font-weight: 400;
-    height: 44px;
     width: auto;
-    border-radius: 44px;
-    font-size: 17px;
-    padding: 0 16px;
-    margin-bottom: 16px;
+    border-radius: 11.2244897959vw;
+    font-size: 4.3367346939vw;
+    padding-left: 4.0816326531vw;
+    padding-right: 4.0816326531vw;
+    margin-bottom: 4.0816326531vw;
+    border-width: 0.2551020408vw;
+    height: 11.2244897959vw;
   }
 
   .mission__topbar a {
