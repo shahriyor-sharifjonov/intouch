@@ -75,128 +75,132 @@
     &__main-item:nth-child(3) {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
-        @include res("border-radius", 24px);
         position: relative;
         background: rgba(41, 127, 255, 1);
         color: $white;
         overflow: hidden;
+        @include res("border-radius", 24px);
 
         img {
             position: absolute;
             z-index: 1;
+            object-fit: cover;
             @include res("right", 0px);
             @include res("bottom", 0px);
             @include res("width", 364px);
             @include res("height", 189px);
-            object-fit: none;
         }
 
         p {
-            @include res("font-size", 27px);
             color: $white;
             font-weight: 700;
             position: absolute;
+            text-transform: uppercase;
+            z-index: 2;
+            @include res("font-size", 27px);
             @include res("left", 24px);
             @include res("line-height", 34px);
             @include res("bottom", 24px);
             @include res("width", 270px);
-            z-index: 2;
         }
     }
 
     &__main-item:nth-child(4) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        @include res("border-radius", 24px);
         position: relative;
         background: rgba(41, 127, 255, 1);
         color: $white;
         overflow: hidden;
+        @include res("border-radius", 24px);
 
         img {
             position: absolute;
             z-index: 1;
-            @include res("right", -52px);
+            right: 0;
+            object-fit: cover;
             @include res("bottom", 30px);
-            @include res("width", 247px);
+            @include res("width", 150px);
             @include res("height", 159px);
-            object-fit: none;
         }
 
         p {
-            @include res("font-size", 27px);
             color: $white;
             font-weight: 700;
             position: absolute;
+            z-index: 2;
+            text-transform: uppercase;
+            @include res("font-size", 27px);
             @include res("left", 24px);
             @include res("line-height", 34px);
             @include res("bottom", 24px);
             @include res("width", 270px);
-            z-index: 2;
         }
     }
 
     &__main-item:nth-child(5) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        @include res("border-radius", 24px);
         position: relative;
         background: rgba(41, 127, 255, 1);
         color: $white;
         overflow: hidden;
+        @include res("border-radius", 24px);
 
         img {
             position: absolute;
             z-index: 1;
-            @include res("right", -21px);
+            right: 0;
+            object-fit: cover;
             @include res("bottom", 25px);
-            @include res("width", 247px);
+            @include res("width", 205px);
             @include res("height", 159px);
-            object-fit: none;
         }
 
         p {
-            @include res("font-size", 27px);
             color: $white;
             font-weight: 700;
             position: absolute;
+            text-transform: uppercase;
+            z-index: 2;
+            @include res("font-size", 27px);
             @include res("left", 24px);
             @include res("line-height", 34px);
             @include res("bottom", 24px);
             @include res("width", 270px);
-            z-index: 2;
         }
     }
 
     &__main-item:nth-child(6) {
         grid-column: 3 / 4;
         grid-row: 2 / 3;
-        @include res("border-radius", 24px);
         position: relative;
         background: rgba(41, 127, 255, 1);
         color: $white;
         overflow: hidden;
+        @include res("border-radius", 24px);
 
         img {
             position: absolute;
             z-index: 1;
-            @include res("right", -20px);
+            object-fit: cover;
+            @include res("right", 0px);
             @include res("bottom", 10px);
-            @include res("width", 247px);
-            @include res("height", 159px);
-            object-fit: none;
+            @include res("width", 200px);
+            @include res("height", 170px);
         }
 
         p {
-            @include res("font-size", 27px);
             color: $white;
             font-weight: 700;
+            text-transform: uppercase;
             position: absolute;
+            z-index: 2;
             @include res("left", 24px);
             @include res("line-height", 34px);
             @include res("bottom", 24px);
             @include res("width", 270px);
-            z-index: 2;
+            @include res("font-size", 27px);
         }
     }
 
@@ -210,7 +214,7 @@
             display: flex;
             flex-direction: column;
             height: auto;
-            gap: 12px;
+            @include resa('gap', 12px);
             width: 100%;
         }
 
@@ -227,8 +231,8 @@
                 justify-content: center;
                 border: 1px solid #ebebeb;
                 font-weight: 400;
-                @include resa('height', 44px);
                 width: auto;
+                @include resa('height', 44px);
                 @include resa('border-radius', 44px);
                 @include resa('font-size', 17px);
                 @include resa('padding-left', 16px);
@@ -251,269 +255,181 @@
             color: rgba(38, 136, 235, 1);
             border: 1px solid rgba(255, 255, 255, 1);
             background: linear-gradient(81.45deg, #EAFFFE -4.31%, rgba(231, 245, 255, 0.8) 99.12%);
+            width: fit-content;
+            margin: auto;
+            @include resa('margin-top', 24px);
+            @include resa('margin-bottom', 32px);
             @include resa('height', 44px);
             @include resa('padding-right', 16px);
             @include resa('padding-left', 16px);
             @include resa('border-radius', 44px);
             @include resa('font-size', 17px);
-            width: fit-content;
-            margin: auto;
-            @include resa('margin-top', 24px);
-            @include resa('margin-bottom', 32px);
 
             img {
+                box-shadow: 0px 7px 44px 0px rgba(41, 127, 255, 0.12);
+                border-radius: 50%;
+                background: rgba(38, 136, 235, 1);
                 @include resa('margin-left', 10px);
                 @include resa('padding', 4px);
                 @include resa('width', 28px);
                 @include resa('height', 28px);
-                box-shadow: 0px 7px 44px 0px rgba(41, 127, 255, 0.12);
-                border-radius: 50%;
-                background: rgba(38, 136, 235, 1);
             }
         }
     
         &__main-item:nth-child(1) {
             width: 100%;
-            @include resa('font-size', 28px);
-            @include resa('line-height', 33px);
             font-weight: 500;
             color: $white;
+            @include resa('font-size', 28px);
+            @include resa('line-height', 33px);
         }
     
         &__main-item:nth-child(2) {
-            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
             overflow: hidden;
             width: 100%;
             @include resa('height', 200px);
+            @include resa('border-radius', 22px);
     
             img {
                 right: 0;
                 bottom: 0;
                 width: auto;
                 height: auto;
-                object-fit: none;
+                object-fit: cover;
             }
     
             p {
-                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                @include resa('line-height', 31px);
                 width: 60%;
+                z-index: 2;
+                @include resa('line-height', 31px);
                 @include resa('bottom', 36px);
                 @include resa('left', 24px);
-                z-index: 2;
+                @include resa('font-size', 25px);
             }
         }
     
         &__main-item:nth-child(3) {
-            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
             overflow: hidden;
             width: 100%;
-            height: 200px;
+            @include resa('border-radius', 22px);
+            @include resa('height', 200px);
     
             img {
                 right: 0;
                 bottom: 0;
-                width: auto;
-                height: auto;
-                object-fit: none;
+                @include resa("width", 400px);
+                height: 100%;
+                object-fit: cover;
             }
     
             p {
-                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                @include resa('line-height', 31px);
                 width: 60%;
-                bottom: 36px;
-                left: 24px;
                 z-index: 2;
+                @include resa('line-height', 31px);
+                @include resa('bottom', 36px);
+                @include resa('left', 24px);
+                @include resa('font-size', 25px);
             }
         }
 
         &__main-item:nth-child(4) {
-            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
             overflow: hidden;
             width: 100%;
-            height: 200px;
+            @include resa('border-radius', 22px);
+            @include resa('height', 200px);
     
             img {
-                right: 0;
+                @include res('right', -100px);
                 bottom: 0;
                 width: auto;
-                height: auto;
-                object-fit: none;
+                height: 100%;
+                object-fit: cover;
             }
     
             p {
-                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                @include resa('line-height', 31px);
                 width: 60%;
-                bottom: 36px;
-                left: 24px;
                 z-index: 2;
+                @include resa('line-height', 31px);
+                @include resa('bottom', 36px);
+                @include resa('left', 24px);
+                @include resa('font-size', 25px);
             }
         }
 
         &__main-item:nth-child(5) {
-            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
             overflow: hidden;
             width: 100%;
-            height: 200px;
+            @include resa('border-radius', 22px);
+            @include resa('height', 200px);
     
             img {
-                right: 0;
                 bottom: 0;
                 width: auto;
-                height: auto;
-                object-fit: none;
+                height: 100%;
+                object-fit: cover;
+                @include res('right', -170px);
             }
     
             p {
-                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                @include resa('line-height', 31px);
                 width: 60%;
-                bottom: 36px;
-                left: 24px;
                 z-index: 2;
+                @include resa('font-size', 25px);
+                @include resa('left', 24px);
+                @include resa('bottom', 36px);
+                @include resa('line-height', 31px);
             }
         }
 
         &__main-item:nth-child(6) {
-            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
             overflow: hidden;
             width: 100%;
-            height: 200px;
+            @include resa('border-radius', 22px);
+            @include resa('height', 200px);
     
             img {
                 position: absolute;
                 right: 0;
                 bottom: 0;
                 width: auto;
-                height: auto;
-                object-fit: none;
+                height: 80%;
+                object-fit: cover;
             }
     
             p {
                 position: absolute;
-                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                @include resa('line-height', 31px);
                 width: 60%;
-                bottom: 36px;
-                left: 24px;
                 z-index: 2;
+                @include resa('line-height', 31px);
+                @include resa('bottom', 36px);
+                @include resa('left', 24px);
+                @include resa('font-size', 25px);
             }
         }
     
-    
-    
     }
-
-
-//     &__main-top {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//         @include res("margin-bottom", 32px);
-//     }
-
-//     &__main-bottom {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//     }
-
-//     &__main-text {
-//         color: $white;
-//     }
-
-//     &__main-subtext {
-//         color: rgba(41, 127, 255, 1);
-//     }
-
-//     &__main-top-text {
-//         @include res("width", 792px);
-//         @include res("font-size", 40px);
-//         @include res("line-height", 48px);
-//         font-weight: 500;
-//         color: $white;
-//     }
-
-//     &__main-card {
-//         @include res("width", 390px);
-//         @include res("height", 220px);
-//         @include res("border-radius", 24px);
-//         position: relative;
-//         background: rgba(41, 127, 255, 1);
-//         color: $white;
-//         overflow: hidden;
-
-//         img {
-//             position: absolute;
-//             z-index: 1;
-//         }
-
-//         p {
-//             @include res("font-size", 27px);
-//             color: $white;
-//             font-weight: 700;
-//             position: absolute;
-//             @include res("left", 24px);
-//             @include res("line-height", 34px);
-//             @include res("bottom", 24px);
-//             @include res("width", 270px);
-//             z-index: 2;
-//         }
-//     }
-
-//     &__main-card-img:nth-child(1) {
-//         @include res("right", 0px);
-//         @include res("bottom", 0px);
-//         @include res("width", 364px);
-//         @include res("height", 189px);
-//         object-fit: none;
-//     }
-//     &__main-card-img:nth-child(2) {
-//         @include res("right", -52px);
-//         @include res("bottom", 30px);
-//         @include res("width", 247px);
-//         @include res("height", 159px);
-//         object-fit: none;
-//     }
-//     &__main-card-img:nth-child(3) {
-//         @include res("right", -21px);
-//         @include res("bottom", 25px);
-//         @include res("width", 247px);
-//         @include res("height", 159px);
-//         object-fit: none;
-//     }
-//     &__main-card-img:nth-child(4) {
-//         @include res("right", -20px);
-//         @include res("bottom", 10px);
-//         @include res("width", 247px);
-//         @include res("height", 159px);
-//         object-fit: none;
-//     }
 }

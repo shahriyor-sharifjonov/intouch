@@ -53,7 +53,7 @@
         font-weight: 400;
         @include res("font-size", 17px);
         @include res("line-height", 21.5px);
-        @include res("letter-spacing", 0.8px);
+        @include res("letter-spacing", -0.4px);
         text-align: center;
         display: flex;
         align-items: center;
