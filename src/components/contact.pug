@@ -4,14 +4,15 @@ mixin contact()
             span Контакты
         div.contact__main 
             .contact__map
-                iframe(
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2276574015393!2d144.95872931531552!3d-37.81735697975198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57776fb7ef72e1a!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1630049958430!5m2!1sen!2sau",
+               iframe(
+                    src="https://yandex.com/map-widget/v1/?um=constructor%3Aa5554d4012f4f5bd13a6f6583513c6bfe00380ba54cf4d02c17d509b8b5b4ee5&amp;source=constructor",
                     width="600",
                     height="450",
                     style="border:0;",
                     allowfullscreen="",
                     loading="lazy"
                 )
+
             form(action="").contact__form
                 div.contact__form-label
                     label Имя 

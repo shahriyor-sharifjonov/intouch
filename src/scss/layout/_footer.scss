@@ -85,4 +85,9 @@
             @include res("margin-left", 148px);
         }
     }
+
+    &__item-keypix {
+        position: relative;
+        @include res("right", 30px);
+    }
 }
