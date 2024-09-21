@@ -110,6 +110,7 @@
             border: solid #fff;
             @include resa('margin-top', 64px);
             @include resa('border-width', 1px);
+            border-bottom: none;
         }
         &__top {
             display: none;
