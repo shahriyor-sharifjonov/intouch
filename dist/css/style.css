@@ -1517,6 +1517,7 @@ body {
     width: 100%;
     border-radius: 60px 60px 0 0;
     background: black;
+    margin-top: 64px;
   }
 
   .footer__top {
@@ -1541,7 +1542,8 @@ body {
   }
 
   .footer__mobile-img {
-    height: 46px;
+    width: 344px;
+    height: 30px;
     margin-bottom: 16px;
   }
 
@@ -1589,6 +1591,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     gap: 24px;
+    margin-top: 24px;
   }
 
   .footer__mobile-links img {
@@ -1619,6 +1622,7 @@ body {
     font-size: 14px;
     color: #ffffff;
     font-weight: 400;
+    margin-top: 12px;
   }
 
   .hero__inner-info {
