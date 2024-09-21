@@ -1210,6 +1210,32 @@
           justify-content: flex-start;
 }
 
+.whyus-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2.5510204082vw;
+  margin-top: 6.1224489796vw;
+}
+
+.whyus-pagination .swiper-pagination-bullet {
+  width: 12.2448979592vw;
+  height: 1.2755102041vw;
+  border-radius: 25.5102040816vw;
+  background: #2B73DC;
+  opacity: 30%;
+}
+
+.whyus-pagination .swiper-pagination-bullet-active {
+  opacity: 100%;
+}
+
 .partners {
   margin-bottom: 6.6666666667vw;
 }

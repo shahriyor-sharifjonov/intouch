@@ -187,4 +187,23 @@
             }
         }
     }
+
+    &-pagination{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include resa('gap', 10px);
+        @include resa('margin-top', 24px);
+
+        .swiper-pagination-bullet{
+            @include resa('width', 48px);
+            @include resa('height', 5px);
+            @include resa('border-radius', 100px);
+            background: #2B73DC;
+            opacity: 30%;
+            &-active{
+                opacity: 100%;
+            }
+        }
+    }
 }

@@ -23,4 +23,10 @@ const swiper = new Swiper('.partners__swiper', {
 const swiper2 = new Swiper('.whyus__swiper', {
     slidesPerView: "auto",
     spaceBetween: 16,
+    modules: [Pagination],
+    pagination: {
+        el: '.whyus-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
 });
