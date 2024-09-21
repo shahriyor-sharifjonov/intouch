@@ -1112,18 +1112,20 @@
 }
 
 .whyus__card {
+  color: #152040;
+  background: #ffffff;
   width: 27.0833333333vw;
   padding-top: 2.5vw;
   padding-left: 2.3611111111vw;
   padding-bottom: 2.5vw;
   padding-right: 2.3611111111vw;
   border-radius: 2.2222222222vw;
-  color: #152040;
-  background: #ffffff;
 }
 
 .whyus__card-title {
   font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 600;
   margin-bottom: 2.2222222222vw;
   font-size: 2.2222222222vw;
   line-height: 2.7777777778vw;
@@ -1183,6 +1185,29 @@
   font-size: 1.1805555556vw;
   line-height: 1.4583333333vw;
   color: #2b73dc;
+}
+
+.whyus__slider {
+  display: none;
+}
+
+.whyus__slider .swiper {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 4.0816326531vw;
+  padding-right: 4.0816326531vw;
+}
+
+.whyus__slider .swiper-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .partners {
@@ -1558,6 +1583,109 @@ body {
     display: none;
   }
 
+  .whyus {
+    margin-bottom: 0vw;
+  }
+
+  .whyus__topbar span {
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #ebebeb;
+    font-weight: 400;
+    height: 11.2244897959vw;
+    width: auto;
+    border-radius: 11.2244897959vw;
+    font-size: 4.3367346939vw;
+    padding-right: 4.0816326531vw;
+    padding-left: 4.0816326531vw;
+    margin-bottom: 4.0816326531vw;
+  }
+
+  .whyus__main {
+    display: none;
+  }
+
+  .whyus__card {
+    width: 87.7551020408vw;
+    padding-top: 6.1224489796vw;
+    padding-left: 4.0816326531vw;
+    padding-bottom: 8.1632653061vw;
+    padding-right: 4.0816326531vw;
+    border-radius: 8.1632653061vw;
+  }
+
+  .whyus__card-title {
+    color: #2B73DC;
+    background: #BCD7FF;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 3.0612244898vw;
+    margin-bottom: 8.1632653061vw;
+    font-size: 6.1224489796vw;
+    line-height: 140%;
+    padding-top: 1.5306122449vw;
+    padding-bottom: 1.5306122449vw;
+  }
+
+  .whyus__card-text {
+    margin-bottom: 6.887755102vw;
+    font-size: 4.3367346939vw;
+    line-height: 6.1224489796vw;
+  }
+
+  .whyus__card-info img {
+    width: 7.1428571429vw;
+    width: 7.1428571429vw;
+    margin-right: 3.0612244898vw;
+  }
+
+  .whyus__card-info span {
+    font-size: 4.3367346939vw;
+    line-height: 6.1224489796vw;
+  }
+
+  .whyus__card-info:not(:last-child) {
+    margin-bottom: 4.0816326531vw;
+  }
+
+  .whyus__card-link {
+    margin-top: 8.6734693878vw;
+  }
+
+  .whyus__card-link img {
+    width: 7.1428571429vw;
+    width: 7.1428571429vw;
+    margin-right: 3.0612244898vw;
+  }
+
+  .whyus__card-link span {
+    font-size: 4.3367346939vw;
+    line-height: 5.3571428571vw;
+  }
+
+  .whyus__slider {
+    display: block;
+    width: 100vw;
+    overflow: hidden;
+    margin-left: -4.0816326531vw;
+  }
+
   .container {
     width: 91.8367346939vw;
   }
@@ -1753,6 +1881,11 @@ body {
     color: #ffffff;
     font-weight: 400;
     margin-top: 3.0612244898vw;
+  }
+
+  .hero {
+    margin-top: 8.1632653061vw;
+    margin-bottom: 16.3265306122vw;
   }
 
   .hero__inner-info {
@@ -2234,6 +2367,10 @@ body {
     font-size: 4.5918367347vw;
     letter-spacing: -0.1275510204vw;
     line-height: 140%;
+  }
+
+  .product {
+    margin-bottom: 24.4897959184vw;
   }
 
   .product__more {

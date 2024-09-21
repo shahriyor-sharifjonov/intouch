@@ -108,6 +108,7 @@
     }
 
     @media screen and (max-width:576px) {
+        @include resa('margin-bottom', 96px);
 
         &__more {
             display: flex;

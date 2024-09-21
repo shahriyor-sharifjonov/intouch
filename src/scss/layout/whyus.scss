@@ -1,5 +1,8 @@
 .whyus {
     @include res("margin-bottom", 96px);
+    @include media(576){
+        @include resa('margin-bottom', 0px);
+    }
     &__topbar {
         display: flex;
         align-items: center;
@@ -19,6 +22,21 @@
             @include res("font-size", 17px);
             @include res("padding-left", 16px);
             @include res("padding-right", 16px);
+            @include media(576){
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ebebeb;
+                font-weight: 400;
+                @include resa('height', 44px);
+                width: auto;
+                @include resa('border-radius', 44px);
+                @include resa('font-size', 17px);
+                @include resa('padding-right', 16px);
+                @include resa('padding-left', 16px);
+                @include resa('margin-bottom', 16px);
+            }
         }
     }
 
@@ -26,24 +44,51 @@
         display: flex;
         justify-content: space-between;
         @include res("gap", 12px);
+        @include media(576){
+            display: none;
+        }
     }
 
     &__card {
+        color: #152040;
+        background: $white;
         @include res("width", 390px);
         @include res("padding-top", 36px);
         @include res("padding-left", 34px);
         @include res("padding-bottom", 36px);
         @include res("padding-right", 34px);
         @include res("border-radius", 32px);
-        color: #152040;
-        background: $white;
+        @include media(576){
+            @include resa("width", 344px);
+            @include resa("padding-top", 24px);
+            @include resa("padding-left", 16px);
+            @include resa("padding-bottom", 32px);
+            @include resa("padding-right", 16px);
+            @include resa("border-radius", 32px);
+        }
     }
 
     &__card-title {
         font-weight: 500;
+        text-transform: uppercase;
+        font-weight: 600;
         @include res("margin-bottom", 32px);
         @include res("font-size", 32px);
         @include res("line-height", 40px);
+        @include media(576){
+            color: #2B73DC;
+            background: #BCD7FF;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include resa('border-radius', 12px);
+            @include resa("margin-bottom", 32px);
+            @include resa("font-size", 24px);
+            line-height: 140%;
+            @include resa('padding-top', 6px);
+            @include resa('padding-bottom', 6px);
+        }
     }
 
     &__card-text {
@@ -51,6 +96,11 @@
         @include res("margin-bottom", 27px);
         @include res("font-size", 17px);
         @include res("line-height", 24px);
+        @include media(576){
+            @include resa("margin-bottom", 27px);
+            @include resa("font-size", 17px);
+            @include resa("line-height", 24px);
+        }
     }
 
     &__card-info {
@@ -61,17 +111,29 @@
             @include res("width", 28px);
             @include res("width", 28px);
             @include res("margin-right", 12px);
+            @include media(576){
+                @include resa("width", 28px);
+                @include resa("width", 28px);
+                @include resa("margin-right", 12px);
+            }
         }
 
         span {
             font-weight: 400;
             @include res("font-size", 17px);
             @include res("line-height", 24px);
+            @include media(576){
+                @include resa("font-size", 17px);
+                @include resa("line-height", 24px);
+            }
         }
     }
 
     &__card-info:not(:last-child) {
         @include res("margin-bottom", 18px);
+        @include media(576){
+            @include resa("margin-bottom", 16px);
+        }
     }
 
     &__card-link {
@@ -79,11 +141,19 @@
         align-items: center;
         text-decoration: none;
         @include res("margin-top", 37px);
+        @include media(576){
+            @include resa("margin-top", 34px);
+        }
 
         img {
             @include res("width", 28px);
             @include res("width", 28px);
             @include res("margin-right", 12px);
+            @include media(576){
+                @include resa("width", 28px);
+                @include resa("width", 28px);
+                @include resa("margin-right", 12px);
+            }
         }
 
         span {
@@ -91,6 +161,30 @@
             @include res("font-size", 17px);
             @include res("line-height", 21px);
             color: rgba(43, 115, 220, 1);
+            @include media(576){
+                @include resa("font-size", 17px);
+                @include resa("line-height", 21px);
+            }
+        }
+    }
+    &__slider{
+        display: none;
+        @include media(576){
+            display: block;
+            width: 100vw;
+            overflow: hidden;
+            @include resa('margin-left', -16px);
+        }
+        .swiper{
+            width: 100%;
+            overflow: hidden;
+            @include resa('padding-left', 16px);
+            @include resa('padding-right', 16px);
+            &-wrapper{
+                width: max-content;
+                display: flex;
+                justify-content: flex-start;
+            }
         }
     }
 }
