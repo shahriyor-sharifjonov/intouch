@@ -75,8 +75,8 @@
     &__bottom {
         display: flex;
         font-weight: 400;
-        @include res("font-size", 14px);
         color: rgba(255, 255, 255, 0.4);
+        @include res("font-size", 14px);
         @include res("margin-top", 138px);
         @include res("margin-bottom", 34px);
 
@@ -98,16 +98,18 @@
     @media screen and (max-width:576px) {
 
         &__body {
-            padding: 32px 24px 94px 24px;
+            @include resa('padding-top', 32px);
+            @include resa('padding-right', 24px);
+            @include resa('padding-left', 24px);
+            @include resa('padding-bottom', 94px);
             box-shadow: 4px -6px 34px 0px rgba(41, 127, 255, 0.6);
             margin: 0 auto;
             width: 100% !important;
             border-radius: 60px 60px 0 0;
             background: rgba(0, 0, 0, 1);
-            // background-image: url("../../img/footerbg.png");
-            // background-repeat: no-repeat;
-            // background-size: cover;
-            margin-top: 64px;
+            border: solid #fff;
+            @include resa('margin-top', 64px);
+            @include resa('border-width', 1px);
         }
         &__top {
             display: none;
