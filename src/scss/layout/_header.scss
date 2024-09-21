@@ -24,8 +24,12 @@
         justify-content: space-between;
         @include res("width", 888px);
         @include res("padding-top", 37px);
-        @include res("padding-bottom", 0px);
+        @include res("padding-bottom", 37px);
         margin: 0 auto;
+        @include media(576){
+            @include resa("padding-top", 13px);
+            @include resa("padding-bottom", 13px);
+        }
     }
 
     &__inner {
@@ -57,6 +61,13 @@
     }
 
     @media screen and (max-width:576px) {
+        .header__inner a{
+            @include resa('margin-right', 35px);
+        }
+        .header__logo{
+            margin-right: 0;
+        }
+        
         &__main {
             display: flex;
             align-items: center;
@@ -69,11 +80,11 @@
         
         &__inner-burger {
             display: block;
-            @include res("margin-right", 68px);
+            @include resa("margin-right", 68px);
 
             img {
-                @include resa('width', 24px);
-                @include resa('height', 24px);
+                @include resa('width', 32px);
+                @include resa('height', 32px);
             }
         }
 
@@ -81,7 +92,10 @@
             @include resa('font-size', 17px);
             @include resa('height', 42px);
             @include resa('border-radius', 42px);
-            padding: 10px 16px;
+            @include resa('padding-top', 10px);
+            @include resa('padding-bottom', 10px);
+            @include resa('padding-left', 16px);
+            @include resa('padding-right', 16px);
         }
 
         &__main {
