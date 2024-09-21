@@ -35,4 +35,43 @@
             @include res("height", 56px);
         }
     }
+
+    @media screen and (max-width:576px) {
+        &__topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 88px;
+    
+            span {
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ebebeb;
+                font-weight: 400;
+                height: 44px;
+                width: auto;
+                border-radius: 44px;
+                font-size: 17px;
+                padding: 0 16px;
+                margin-bottom: 16px;
+            }
+    
+            a {
+                display: none;
+            }
+        }
+
+        &__main {
+            flex-wrap: wrap;
+            gap: 24px;
+            img {
+                width: calc(50% - 24px);
+                height: 30px;
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+    }
 }

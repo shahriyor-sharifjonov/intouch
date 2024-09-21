@@ -31,10 +31,14 @@
         grid-template-rows: repeat(2, 1fr);
     }
 
+    &__main-item img{
+        object-fit: cover;
+        @include res("border-radius", 24px);
+    }
+
     &__main-item:nth-child(1) {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        @include res("border-radius", 24px);
 
         img {
             width: 100%;
@@ -44,7 +48,6 @@
     &__main-item:nth-child(2) {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-        @include res("border-radius", 24px);
         img {
             width: 100%;
             height: 100%;
@@ -53,7 +56,6 @@
     &__main-item:nth-child(3) {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        @include res("border-radius", 24px);
         img {
             width: 100%;
             height: 100%;
@@ -62,7 +64,6 @@
     &__main-item:nth-child(4) {
         grid-column: 3 / 4;
         grid-row: 1 / 3;
-        @include res("border-radius", 24px);
         overflow: hidden;
         position: relative;
         img {
@@ -92,5 +93,121 @@
                 @include res("margin-top", 34px);
             }
         }
+    }
+
+    &__more {
+        display: none;
+    }
+
+    &__main-item:nth-child(5) {
+        display: none;
+    }
+
+    @media screen and (max-width:576px) {
+
+        &__more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 400;
+            color: rgba(38, 136, 235, 1);
+            border: solid rgba(255, 255, 255, 1);
+            background: linear-gradient(81.45deg, #EAFFFE -4.31%, rgba(231, 245, 255, 0.8) 99.12%);
+            width: fit-content;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @include resa('height', 44px);
+            @include resa('padding-right', 16px);
+            @include resa('padding-left', 16px);
+            @include resa('border-radius', 44px);
+            @include resa('font-size', 17px);
+            @include resa('border-width', 1px);
+            img {
+                box-shadow: 0px 7px 44px 0px rgba(41, 127, 255, 0.12);
+                border-radius: 50%;
+                background: rgba(38, 136, 235, 1);
+                @include resa('margin-left', 10px);
+                @include resa('padding', 4px);
+                @include resa('height', 28px);
+                @include resa('width', 28px);
+            }
+        }
+
+        &__main {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+            @include resa('gap', 12px);
+            @include resa('height', 564px);
+        }
+
+        &__main-item {
+            overflow: hidden;
+            @include resa('border-radius', 24px);
+        }
+
+        &__main-item:nth-child(1) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            @include resa('border-radius', 24px);
+        }
+
+        &__main-item:nth-child(4) {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+            display: none;
+            @include resa('border-radius', 24px);
+        }
+
+        &__main-item:nth-child(5) {
+            display: block;
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+            overflow: hidden;
+            position: relative;
+            @include resa('border-radius', 24px);
+        
+        }
+
+        &__main-item-pic {
+            width: 100%;
+            height: 100%;
+        }
+
+        &__topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include resa('margin-top', 88px);
+    
+            span {
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: solid #ebebeb;
+                font-weight: 400;
+                width: auto;
+                @include resa('border-radius', 44px);
+                @include resa('font-size', 17px);
+                @include resa('padding-left', 16px);
+                @include resa('padding-right', 16px);
+                @include resa('padding-top', 12px);
+                @include resa('padding-bottom', 12px);
+                @include resa('margin-bottom', 16px);
+                @include resa('height', 44px);
+                @include resa('width', 113px);
+                @include resa('border-width', 1px);
+            }
+    
+            a {
+                display: none;
+            }
+
+        }
+
     }
 }
