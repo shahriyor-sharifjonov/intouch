@@ -1,5 +1,9 @@
 // Шапка
 .header {
+    @include media(576){
+        border-bottom: solid #fff;
+        @include resa('border-width', 1px);
+    }
     &__logo {
         @include res("width", 50px);
         @include res("height", 42px);
@@ -89,7 +93,7 @@
         }
 
         &__btn {
-            @include resa('font-size', 17px);
+            @include resa('font-size', 16px);
             @include resa('height', 42px);
             @include resa('border-radius', 42px);
             @include resa('padding-top', 10px);
