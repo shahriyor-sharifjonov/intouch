@@ -41,7 +41,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 88px;
+            @include resa('margin-top', 88px);
     
             span {
                 color: $white;
@@ -50,12 +50,13 @@
                 justify-content: center;
                 border: 1px solid #ebebeb;
                 font-weight: 400;
-                height: 44px;
+                @include resa('height', 44px);
                 width: auto;
-                border-radius: 44px;
-                font-size: 17px;
-                padding: 0 16px;
-                margin-bottom: 16px;
+                @include resa('border-radius', 44px);
+                @include resa('font-size', 17px);
+                @include resa('padding-right', 16px);
+                @include resa('padding-left', 16px);
+                @include resa('margin-bottom', 16px);
             }
     
             a {

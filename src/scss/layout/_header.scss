@@ -72,15 +72,15 @@
             @include res("margin-right", 68px);
 
             img {
-                width: 24px;
-                height: 24px;
+                @include resa('width', 24px);
+                @include resa('height', 24px);
             }
         }
 
         &__btn {
-            font-size: 17px; 
-            height: 42px;
-            border-radius: 42px;
+            @include resa('font-size', 17px);
+            @include resa('height', 42px);
+            @include resa('border-radius', 42px);
             padding: 10px 16px;
         }
 
@@ -89,9 +89,9 @@
         }
 
         &__logo {
-            width: 40px;
-            height: 34px;
-            margin-right: 35px;
+            @include resa('width', 40px);
+            @include resa('height', 34px);
+            @include resa('margin-right', 35px);
         }
 
         &__inner {

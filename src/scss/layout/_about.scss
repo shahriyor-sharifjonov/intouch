@@ -218,7 +218,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-top: 88px;
+            @include resa('margin-top', 88px);
     
             span {
                 color: $white;
@@ -227,12 +227,13 @@
                 justify-content: center;
                 border: 1px solid #ebebeb;
                 font-weight: 400;
-                height: 44px;
+                @include resa('height', 44px);
                 width: auto;
-                border-radius: 44px;
-                font-size: 17px;
-                padding: 0 16px;
-                margin-bottom: 16px;
+                @include resa('border-radius', 44px);
+                @include resa('font-size', 17px);
+                @include resa('padding-left', 16px);
+                @include resa('padding-right', 16px);
+                @include resa('margin-bottom', 16px);
             }
     
             a {
@@ -251,17 +252,18 @@
             border: 1px solid rgba(255, 255, 255, 1);
             background: linear-gradient(81.45deg, #EAFFFE -4.31%, rgba(231, 245, 255, 0.8) 99.12%);
             height: 44px;
-            padding: 0 16px;
-            border-radius: 44px;
-            font-size: 17px;
+            @include resa('padding-right', 16px);
+            @include resa('padding-left', 16px);
+            @include resa('border-radius', 44px);
+            @include resa('font-size', 17px);
             width: fit-content;
             margin: 24px auto 32px auto;
 
             img {
-                 margin-left: 10px;
-                 padding: 4px;
-                 width: 28px;
-                 height: 28px;
+                 @include resa('margin-left', 10px);
+                 @include resa('padding', 4px);
+                 @include resa('width', 28px);
+                 @include resa('height', 28px);
                  box-shadow: 0px 7px 44px 0px rgba(41, 127, 255, 0.12);
                  border-radius: 50%;
                  background: rgba(38, 136, 235, 1);
@@ -270,14 +272,14 @@
     
         &__main-item:nth-child(1) {
             width: 100%;
-            font-size: 28px;
-            line-height: 33px;
+            @include resa('font-size', 28px);
+            @include resa('line-height', 33px);
             font-weight: 500;
             color: $white;
         }
     
         &__main-item:nth-child(2) {
-            border-radius: 22px;
+            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
@@ -294,10 +296,10 @@
             }
     
             p {
-                font-size: 25px;
+                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                line-height: 31px;
+                @include resa('line-height', 31px);
                 width: 60%;
                 bottom: 36px;
                 left: 24px;
@@ -306,7 +308,7 @@
         }
     
         &__main-item:nth-child(3) {
-            border-radius: 22px;
+            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
@@ -323,10 +325,10 @@
             }
     
             p {
-                font-size: 25px;
+                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                line-height: 31px;
+                @include resa('line-height', 31px);
                 width: 60%;
                 bottom: 36px;
                 left: 24px;
@@ -335,7 +337,7 @@
         }
 
         &__main-item:nth-child(4) {
-            border-radius: 22px;
+            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
@@ -352,10 +354,10 @@
             }
     
             p {
-                font-size: 25px;
+                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                line-height: 31px;
+                @include resa('line-height', 31px);
                 width: 60%;
                 bottom: 36px;
                 left: 24px;
@@ -364,7 +366,7 @@
         }
 
         &__main-item:nth-child(5) {
-            border-radius: 22px;
+            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
@@ -381,10 +383,10 @@
             }
     
             p {
-                font-size: 25px;
+                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                line-height: 31px;
+                @include resa('line-height', 31px);
                 width: 60%;
                 bottom: 36px;
                 left: 24px;
@@ -393,7 +395,7 @@
         }
 
         &__main-item:nth-child(6) {
-            border-radius: 22px;
+            @include resa('border-radius', 22px);
             position: relative;
             background: rgba(41, 127, 255, 1);
             color: $white;
@@ -412,10 +414,10 @@
     
             p {
                 position: absolute;
-                font-size: 25px;
+                @include resa('font-size', 25px);
                 color: $white;
                 font-weight: 700;
-                line-height: 31px;
+                @include resa('line-height', 31px);
                 width: 60%;
                 bottom: 36px;
                 left: 24px;

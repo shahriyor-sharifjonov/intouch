@@ -31,10 +31,14 @@
         grid-template-rows: repeat(2, 1fr);
     }
 
-    &__main-item img{
-        object-fit: cover;
+
+    &__main-item{
         @include res("border-radius", 24px);
-    }
+        img{
+            object-fit: cover;
+            @include res("border-radius", 24px);
+        }
+    } 
 
     &__main-item:nth-child(1) {
         grid-column: 1 / 3;

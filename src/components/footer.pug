@@ -17,10 +17,10 @@ mixin footer()
                     a(href="#") Контакты
                 div.footer__info
                     p.footer__info-title Соц. сети
-                    a(href="#") 
+                    a(href="https://instagram.com/intouch.uz" target="_blank") 
                         img(src="@img/ri_instagram-fill.svg", alt="")
                         p Instagram
-                    a(href="#") 
+                    a(href="https://t.me/intouch_uzb" target="_blank") 
                         img(src="@img/ri_telegram-fill.svg", alt="")
                         p Telegram
             .footer__bottom 
@@ -34,8 +34,8 @@ mixin footer()
                     p г. Ташкент, Юнусабадский район, 2-й проезд Турккургон 2
                 div.footer__mobile-info
                     span Контакты
-                    p +998 98 000-99-99
-                    p +998 98 000-99-99
+                    a(href="tel:+998980009999") +998 98 000-99-99
+                    a(href="tel:+998993559999") +998 99 355-99-99
                 div.footer__mobile-info
                     span Время работы
                     p Пн. – Сб.: с 9:00 до 18:00
@@ -45,9 +45,11 @@ mixin footer()
                 div.footer__mobile-info
                     span Мы в соц. сетях
                     div.footer__mobile-links
-                        img(src="@img/insta.svg", alt="")
-                        img(src="@img/tg.svg", alt="")
-                div.footer__mobile-bottom
+                        a(href="https://instagram.com/intouch.uz" target="_blank") 
+                            img(src="@img/insta.svg", alt="")
+                        a(href="https://t.me/intouch_uzb" target="_blank") 
+                            img(src="@img/tg.svg", alt="")
+                a(href="https://keypix.uz" target="_blank").footer__mobile-bottom
                     img(src="@img/keypix.svg", alt="")
                     p Разработка сайтов
                     

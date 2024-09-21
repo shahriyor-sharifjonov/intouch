@@ -3,7 +3,7 @@ mixin product()
         .product__topbar
             span Продукты
         div.product__main 
-            div.product__main-item
+            a(href="#!").product__main-item
                 img(src="@img/pr1.png", alt="" draggable="false")
             div.product__main-item
                 img(src="@img/pr2.png", alt="" draggable="false")
@@ -16,7 +16,7 @@ mixin product()
                     p Узнать больше
             div.product__main-item
                 img(src="@img/pr5.png", alt="" draggable="false").product__main-item-pic
-                a(href="#").product__more Подробнее
+                div.product__more Подробнее
                     img(src="@img/arrow-right.svg", alt="arrow" draggable="false")
 
             
