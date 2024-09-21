@@ -74,6 +74,11 @@
         background: linear-gradient(103.91deg, rgba(255, 255, 255, 0.176) -5.61%, rgba(255, 255, 255, 0.068) 121.64%);
         @include res('border-width', 1px);
         color: $white;
+        position: relative;
+
+        &::before{
+            
+        }
 
         div {
             display: flex;

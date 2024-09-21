@@ -436,6 +436,7 @@
   background: linear-gradient(103.91deg, rgba(255, 255, 255, 0.176) -5.61%, rgba(255, 255, 255, 0.068) 121.64%);
   border-width: 0.0694444444vw;
   color: #ffffff;
+  position: relative;
 }
 
 .hero__main-users div {
@@ -2055,8 +2056,15 @@ body {
 
   .mission__main-video {
     width: 100%;
-    height: 220px;
-    border-radius: 24px;
+    margin-right: 0;
+    overflow: hidden;
+    border-radius: 6.1224489796vw;
+    height: 56.1224489796vw;
+  }
+
+  .mission__main-video img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .mission__main-img {
@@ -2065,8 +2073,8 @@ body {
   }
 
   .mission__main-play {
-    width: 64px;
-    height: 64px;
+    width: 16.3265306122vw;
+    height: 16.3265306122vw;
   }
 
   .mission__main-play img {
@@ -2075,9 +2083,12 @@ body {
   }
 
   .mission__main-text {
-    font-size: 21px;
-    line-height: 29px;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 5.3571428571vw;
+    letter-spacing: -0.2551020408vw;
+    line-height: 140%;
   }
 
   .product__more {
