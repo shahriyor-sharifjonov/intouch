@@ -69,6 +69,7 @@
     &__main-inner {
         display: flex;
         flex-direction: column;
+        position: relative;
         @include res("gap", 12px);
     }
 
@@ -85,9 +86,21 @@
         @include res('border-width', 1px);
         color: $white;
         position: relative;
+        z-index: 2;
 
-        &::before{
-
+        &-el{
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            background: #0066FF;
+            filter: blur(5.8333333333vw);
+            @include res('height', 114px);
+            @include res('top', -21px);
+            @include media(576){
+                display: none;
+            }
         }
 
         div {
@@ -96,6 +109,7 @@
             @include res("margin-left", 16px);
 
             p {
+                font-weight: 600;
                 @include res("font-size", 27px);
                 @include res("line-height", 32px);
             }
