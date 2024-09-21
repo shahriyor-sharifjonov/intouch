@@ -13,8 +13,8 @@
             justify-content: center;
             border: 1px solid #ebebeb;
             font-weight: 400;
-            @include res("height", 44px);
             width: auto;
+            @include res("height", 44px);
             @include res("border-radius", 44px);
             @include res("font-size", 17px);
             @include res("padding-left", 16px);
@@ -26,13 +26,34 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100vw;
         @include res("padding-left", 37px);
         @include res("padding-right", 37px);
         @include res("padding-top", 24px);
         @include res("padding-bottom", 24px);
 
+        .swiper{
+            width: 100vw;
+            overflow: hidden;
+            @include res('margin-left', -156px);
+        }
+
+        .swiper-wrapper{
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         img {
             @include res("height", 56px);
+            max-width: 80%;
         }
     }
 
@@ -66,12 +87,16 @@
 
         &__main {
             flex-wrap: wrap;
-            gap: 24px;
+            @include resa('gap', 24px);
+            .swiper{
+                width: 100vw;
+                @include resa('margin-left', -25px);
+            }
             img {
-                width: calc(50% - 24px);
-                height: 30px;
+                max-width: 80%;
                 display: flex;
                 justify-content: flex-start;
+                @include resa('height', 30px);
             }
         }
     }
