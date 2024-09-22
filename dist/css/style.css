@@ -241,6 +241,7 @@
 .footer__item-text {
   color: #ffffff;
   font-weight: 400;
+  text-decoration: none;
   font-size: 0.9722222222vw;
 }
 
