@@ -10,12 +10,29 @@ const swiper = new Swiper('.partners__swiper', {
     modules: [Autoplay],
     autoplay: {
       delay: 2000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
 
     breakpoints: {
         576: {
             slidesPerView: 4,
+        },
+    }
+});
+
+
+const swiper3 = new Swiper('.reviews__swiper', {
+    loop: true,
+    slidesPerView: "auto",
+    modules: [Autoplay],
+    spaceBetween: 16,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: true,
+    },
+    breakpoints: {
+        576: {
+            spaceBetween: 24,
         },
     }
 });

@@ -1505,6 +1505,160 @@
   background: #2b73dc;
 }
 
+.reviews {
+  padding-bottom: 5.5555555556vw;
+}
+
+.reviews__main {
+  width: 100%;
+}
+
+.reviews .swiper {
+  width: 100%;
+}
+
+.reviews .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.reviews .swiper-slide {
+  position: relative;
+  isolation: isolate;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 30.5555555556vw;
+  width: 33.3333333333vw;
+  padding-top: 2.9166666667vw;
+  padding-left: 2.2222222222vw;
+  padding-right: 5.3472222222vw;
+  padding-bottom: 2.2222222222vw;
+}
+
+.reviews__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.reviews__bg.sm {
+  display: none;
+}
+
+.reviews__bg svg {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__pin {
+  position: absolute;
+  top: 0.2777777778vw;
+  right: 0.2777777778vw;
+  width: 5.2083333333vw;
+  height: 5.2083333333vw;
+}
+
+.reviews__pin svg {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__icon {
+  width: 4.0111111111vw;
+  width: 3.0270833333vw;
+  margin-bottom: 1.6666666667vw;
+}
+
+.reviews__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews__p {
+  font-weight: 500;
+  line-height: 140%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 1.6666666667vw;
+}
+
+.reviews__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1.1111111111vw;
+}
+
+.reviews__img {
+  width: 3.8888888889vw;
+  height: 3.8888888889vw;
+  line-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.reviews__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.2083333333vw;
+}
+
+.reviews__name {
+  font-weight: 600;
+  line-height: 140%;
+  color: #343434;
+  font-size: 1.25vw;
+}
+
+.reviews__dolzhnost {
+  color: #343434;
+  opacity: 60%;
+  font-weight: 500;
+  font-size: 1.25vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1710,6 +1864,72 @@ body {
     width: 100vw;
     overflow: hidden;
     margin-left: -4.0816326531vw;
+  }
+
+  .reviews {
+    padding-bottom: 0;
+  }
+
+  .reviews .swiper-slide {
+    height: 71.4285714286vw;
+    width: 87.7551020408vw;
+    padding-top: 4.0816326531vw;
+    padding-left: 4.0816326531vw;
+    padding-right: 4.0816326531vw;
+    padding-bottom: 6.1224489796vw;
+  }
+
+  .reviews__bg {
+    display: none;
+  }
+
+  .reviews__bg.sm {
+    display: block;
+  }
+
+  .reviews__pin {
+    top: 1.0204081633vw;
+    right: 2.5510204082vw;
+    width: 11.2244897959vw;
+    height: 11.2244897959vw;
+  }
+
+  .reviews__icon {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+    width: 10.8163265306vw;
+    width: 8.1632653061vw;
+    margin-bottom: 4.3367346939vw;
+  }
+
+  .reviews__p {
+    font-size: 3.8265306122vw;
+  }
+
+  .reviews__details {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 5.612244898vw;
+    gap: 4.0816326531vw;
+  }
+
+  .reviews__img {
+    width: 12.2448979592vw;
+    height: 12.2448979592vw;
+  }
+
+  .reviews__user {
+    gap: 0.7653061224vw;
+  }
+
+  .reviews__name {
+    font-size: 4.3367346939vw;
+  }
+
+  .reviews__dolzhnost {
+    font-size: 4.3367346939vw;
   }
 
   .container {
