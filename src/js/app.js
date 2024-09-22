@@ -28,7 +28,7 @@ const swiper3 = new Swiper('.reviews__swiper', {
     spaceBetween: 16,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
     breakpoints: {
         576: {
