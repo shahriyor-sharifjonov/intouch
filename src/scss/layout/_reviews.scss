@@ -98,7 +98,7 @@
         flex: 1 1 auto;
         @include res('font-size', 24px);
         @include media(576){
-            @include resa('font-size', 15px);
+            @include resa('font-size', 16px);
         }
     }
 
