@@ -1,4 +1,5 @@
 .product {
+    @include res('padding-top', 96px);
     @include res("margin-bottom", 96px);
     &__topbar {
         display: flex;

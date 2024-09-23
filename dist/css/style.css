@@ -776,10 +776,6 @@
   display: none;
 }
 
-.mission {
-  margin-bottom: 6.6666666667vw;
-}
-
 .mission__topbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -906,6 +902,7 @@
 }
 
 .product {
+  padding-top: 6.6666666667vw;
   margin-bottom: 6.6666666667vw;
 }
 
