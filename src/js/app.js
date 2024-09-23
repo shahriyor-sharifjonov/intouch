@@ -99,3 +99,24 @@ if(document.querySelector('.catalog__btn')){
     })
   })
 }
+
+const openPopup = document.querySelectorAll('.popup-open');
+const closes = document.querySelectorAll('.popup-close');
+const popups = document.querySelectorAll('.popup');
+
+closes.forEach(btn => {
+  btn.addEventListener('click', () => {
+    popups.forEach(popup => {
+      popup.classList.remove('active')
+    })
+  })
+})
+
+openPopup.forEach(btn => {
+  btn.addEventListener('click', () => {
+    popups.forEach(popup => {
+      popup.classList.remove('active')
+    })
+    document.querySelector(btn.getAttribute('data-target')).classList.add('active');
+  })
+})
