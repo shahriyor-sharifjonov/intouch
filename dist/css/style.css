@@ -1896,7 +1896,7 @@ body {
 }
 
 .catalog__item-img {
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   line-height: 0;
   display: -webkit-box;
   display: -ms-flexbox;
