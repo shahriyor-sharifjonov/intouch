@@ -23,6 +23,7 @@
         opacity: 1;
         pointer-events: all;
     }
+
     &-back {
         position: absolute;
         transform: translate(100%, -100%);
@@ -39,6 +40,18 @@
         svg {
             @include res('width', 32px);
             @include res('height', 32px);
+        }
+
+        @include media(576){
+            @include resa('top', 40px);
+            @include resa('right', 52px);
+            @include resa('width', 56px);
+            @include resa('height', 56px);
+
+            svg {
+                @include resa('width', 32px);
+                @include resa('height', 32px);
+            }
         }
     }
 
@@ -63,6 +76,17 @@
         @include res('height', 495px);
         @include res('border-radius', 32px);
         @include res('padding', 32px);
+
+        @include media(576){
+            background-color: white;
+            @include resa('width', 376px);
+            @include resa('border-radius', 32px);
+            @include resa('padding', 20px);
+            height: 90vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
     }
 
     &-left {
@@ -75,6 +99,14 @@
             @include res('height', 320px);
             @include res('margin-bottom', 16px);
             @include res('border-radius', 31px);
+
+            @include media(576){
+                @include resa('border-width', 1px);
+                @include resa('width', 240px);
+                @include resa('height', 240px);
+                @include resa('margin-bottom', 16px);
+                @include resa('border-radius', 31px);
+            }
 
             img {
                 width: 100%;
@@ -93,9 +125,22 @@
             @include res('border-radius', 20px);
             @include res('padding', 8px);
 
+            @include media(576){
+                @include resa('border-width', 1px);
+                @include resa('width', 240px);
+                @include resa('height', 64px);
+                @include resa('border-radius', 20px);
+                @include resa('padding', 8px);
+            }
+
             .swiper-slide {
                 @include res('width', 82px);
                 @include res('height', 64px);
+
+                @include media(576){
+                    @include resa('width', 56px, true);
+                    @include resa('height', 48px);
+                }
 
                 &:last-child {
                     padding-right: 0;
@@ -109,6 +154,13 @@
                     @include res('border-radius', 12px);
                     background-color: #fff;
                     overflow: hidden;
+
+                    @include media(576){
+                        @include resa('width', 48px);
+                        @include resa('height', 48px);
+                        @include resa('border-width', 1px);
+                        @include resa('border-radius', 12px);
+                    }
     
                     img {
                         width: 100%;
@@ -139,12 +191,18 @@
         height: 100%;
         background-color: white;
         position: relative;
+        overflow: auto;
         @include res('width', 376px);
         @include res('height', 431px);
         @include res('border-radius', 24px);
         @include res('padding', 20px);
-        // @include res('padding-bottom', 200px);
-        overflow: auto;
+
+        @include media(576){
+            @include resa('width', 376px);
+            @include resa('height', 431px);
+            @include resa('border-radius', 24px);
+            @include resa('padding', 20px);
+        }
 
         &::-webkit-scrollbar {
             width: 0;
@@ -159,6 +217,12 @@
         @include res('font-size', 21px);
         @include res('line-weight', 20px);
         @include res('margin-bottom', 16px);
+
+        @include media(576){
+            @include resa('font-size', 21px);
+            @include resa('line-weight', 20px);
+            @include resa('margin-bottom', 16px);
+        }
     }
 
     &-price {
@@ -168,6 +232,13 @@
         @include res('line-height', 24px);
         @include res('margin-bottom', 16px);
         @include res('letter-spacing', 0.2px);
+
+        @include media(576){
+            @include resa('font-size', 17px);
+            @include resa('line-height', 24px);
+            @include resa('margin-bottom', 16px);
+            @include resa('letter-spacing', 0.2px);
+        }
     }
 
     &-char {
@@ -177,6 +248,10 @@
         justify-content: flex-start;
         @include res('margin-bottom', 16px);
 
+        @include media(576){
+            @include resa('margin-bottom', 16px);
+        }
+
         &__title {
             font-weight: 500;
             letter-spacing: -0.025em;
@@ -184,6 +259,12 @@
             @include res('font-size', 15px);
             @include res('line-height', 20px);
             @include res('margin-bottom', 12px);
+
+            @include media(576){
+                @include resa('font-size', 15px);
+                @include resa('line-height', 20px);
+                @include resa('margin-bottom', 12px);
+            }
         }
 
         ul {
@@ -192,6 +273,10 @@
             align-items: flex-start;
             justify-content: flex-start;
             @include res('gap', 8px);
+
+            @include media(576){
+                @include resa('gap', 8px);
+            }
 
             li {
                 display: flex;
@@ -206,9 +291,18 @@
                     @include res('font-size', 14px);
                     @include res('line-height', 16.8px);
 
+                    @include media(576){
+                        @include resa('font-size', 14px);
+                        @include resa('line-height', 16.8px);
+                    }
+
                     span {
                         color: black;
                         @include res('margin-left', 8px);
+
+                        @include media(576){
+                            @include resa('margin-left', 8px);
+                        }
                     }
                 }
             }
@@ -226,28 +320,50 @@
         @include res('font-size', 14px);
         @include res('line-height', 20px);
 
+        @include media(576){
+            @include resa('font-size', 14px);
+            @include resa('line-height', 20px);
+        }
+
         svg {
             @include res('width', 20px);
             @include res('height', 20px);
             @include res('margin-left', 8px);
+
+            @include media(576){
+                @include resa('width', 20px);
+                @include resa('height', 20px);
+                @include resa('margin-left', 8px);
+            }
         }
     }
 
     &-btn {
-        @include res('width', 336px);
         background-color: #2AA02C;
         box-shadow: 0px 4px 16px 0px #0000001F;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0.20000000298023224px;
         position: sticky;
         bottom: 0;
+        @include res('width', 336px);
         @include res('padding', 12px);
         @include res('padding-left', 58px);
         @include res('padding-right', 58px);
         @include res('border-radius', 44px);
-        color: white;
-        font-weight: 500;
-        letter-spacing: 0.20000000298023224px;
         @include res('font-size', 15px);
         @include res('line-height', 20px);
         @include res('margin-top', 20px);
+
+        @include media(576){
+            @include resa('width', 336px);
+            @include resa('padding', 12px);
+            @include resa('padding-left', 58px);
+            @include resa('padding-right', 58px);
+            @include resa('border-radius', 44px);
+            @include resa('font-size', 15px);
+            @include resa('line-height', 20px);
+            @include resa('margin-top', 20px);
+        }
     }
 }
