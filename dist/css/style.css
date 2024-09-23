@@ -284,7 +284,7 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  height: calc(100vh - 17.6020408163vw);
+  height: calc(100% - 17.6020408163vw);
   -webkit-transition: 300ms ease-out;
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
