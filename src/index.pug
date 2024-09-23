@@ -5,7 +5,7 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.min.css")
-        title Document
+        title Intouch - Лучшее качество только с нами
     body 
         .wrapper
             include components/header 
@@ -17,13 +17,18 @@ html(lang="en")
                     include components/mission 
                     include components/product 
                     include components/whyus 
-                    include components/popup/product 
+                    include components/reviews 
+                    include components/partners 
+                    include components/contact 
                     +hero
                     +about
                     +mission
                     +product
                     +whyus 
-                    +popupProduct
+                    +reviews 
+                    +partners 
+                    +contact 
             include components/footer 
             +footer
+        script(src="//code.jivosite.com/widget/6z1VSpkLX0" async)
         script(src="js/app.min.js") 

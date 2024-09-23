@@ -1,4 +1,5 @@
 .product {
+    @include res('padding-top', 96px);
     @include res("margin-bottom", 96px);
     &__topbar {
         display: flex;
@@ -76,7 +77,7 @@
             scale: 1.5;
         }
 
-        a {
+        .product__main-item-link {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -108,6 +109,7 @@
     }
 
     @media screen and (max-width:576px) {
+        @include resa('margin-bottom', 96px);
 
         &__more {
             display: flex;

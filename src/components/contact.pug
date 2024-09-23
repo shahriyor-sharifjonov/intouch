@@ -1,11 +1,11 @@
 mixin contact()
-    .contact 
+    .contact#contacts
         .contact__topbar
             span Контакты
         div.contact__main 
             .contact__map
                iframe(
-                    src="https://yandex.com/map-widget/v1/?um=constructor%3Aa5554d4012f4f5bd13a6f6583513c6bfe00380ba54cf4d02c17d509b8b5b4ee5&amp;source=constructor",
+                    src="https://yandex.uz/map-widget/v1/?ll=69.266375%2C41.342613&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoyNDkzMDU5MTc3EjZPyrt6YmVraXN0b24sIFRvc2hrZW50LCBUdXJrcW8ncmcnb24gMi10b3Iga28nY2hhc2ksIDIiCg1hiIpCFdheJUI%2C&z=16.57",
                     width="600",
                     height="450",
                     style="border:0;",
@@ -24,9 +24,9 @@ mixin contact()
                     label Электронная почта 
                     input(type="email",  placeholder="Напишите почту")
                 div.contact__form-check
-                    input(type="checkbox")
+                    input(type="checkbox" id="chk")
                     div
-                        p Я даю согласие на обработку
-                        a(href="#") персональных данных
+                        label(for="chk") Я даю согласие на обработку
+                        a(href="#!") персональных данных
                 button.contact__form-btn Оставить заявку
             
