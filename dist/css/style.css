@@ -283,7 +283,6 @@
   width: 100%;
   opacity: 0;
   visibility: hidden;
-  height: calc(100vh - 17.6020408163vw);
   -webkit-transition: 300ms ease-out;
   transition: 300ms ease-out;
   -webkit-box-orient: vertical;
@@ -300,7 +299,7 @@
   gap: 5.1020408163vw;
   padding-left: 5.1020408163vw;
   padding-top: 10.2040816327vw;
-  padding-bottom: 6.6326530612vw;
+  padding-bottom: 10.2040816327vw;
 }
 
 .header__menu.open {
@@ -930,6 +929,7 @@
   padding-right: 1.1111111111vw;
   border-radius: 3.0555555556vw;
   font-size: 1.1805555556vw;
+  display: none;
 }
 
 .mission__topbar a img {
@@ -1756,8 +1756,6 @@
 }
 
 .popupProduct {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1767,19 +1765,26 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.popup {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100%;
   z-index: 100;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
   -webkit-transition: opacity 200ms;
   transition: opacity 200ms;
 }
 
-.popupProduct.active {
+.popup.active {
+  visibility: visible;
   opacity: 1;
   pointer-events: all;
 }
@@ -2147,7 +2152,7 @@ body {
 }
 
 .catalog {
-  padding-top: 3.4722222222vw;
+  padding-top: 6.25vw;
   padding-bottom: 10.4166666667vw;
 }
 
@@ -3223,6 +3228,7 @@ body {
     height: 11.2244897959vw;
     padding-left: 4.0816326531vw;
     padding-right: 4.0816326531vw;
+    display: none;
   }
 
   .mission__more img {

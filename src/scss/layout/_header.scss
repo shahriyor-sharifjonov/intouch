@@ -126,7 +126,7 @@
         width: 100%;
         opacity: 0;
         visibility: hidden;
-        height: calc(100vh - 17.6020408163vw);
+        // height: calc(100% - 17.6020408163vw);
         transition: 300ms ease-out;
         flex-direction: column;
         align-items: flex-start;
@@ -135,7 +135,7 @@
         @include resa('gap', 20px);
         @include resa('padding-left', 20px);
         @include resa('padding-top', 40px);
-        @include resa('padding-bottom', 26px);
+        @include resa('padding-bottom', 40px);
         &.open{
             opacity: 1;
             visibility: visible;

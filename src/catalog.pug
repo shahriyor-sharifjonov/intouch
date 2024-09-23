@@ -1,5 +1,5 @@
 mixin item(img)
-    button(type="button").catalog__item 
+    button(type="button" data-target="#productPopup").catalog__item.popup-open 
         .catalog__item-img 
             img(src=img, alt="" draggable="false")
             span.catalog__item-span Новинка
@@ -23,13 +23,15 @@ html(lang="en")
             +header 
             main.main 
                 .container 
+                    include components/hero 
+                    +hero-2 
                     .catalog 
                         h1.catalog__title Каталог товаров
                         .catalog__menu 
                             button(type="button" data-target="#panel").catalog__btn.active Сенсорные панели 
                             button(type="button" data-target="#kiosk").catalog__btn Информационные киоски 
-                            button(type="button" data-target="#stend").catalog__btn Мобильный стенд 
-                            button(type="button" data-target="#proccessor").catalog__btn Процессор 
+                            button(type="button" data-target="#stend").catalog__btn Мобильные стенды
+                            button(type="button" data-target="#proccessor").catalog__btn Процессоры
                         .catalog__content.active#panel 
                             +item("@img/product-1.png")
                             +item("@img/product-1.png")
@@ -70,6 +72,8 @@ html(lang="en")
                             +item("@img/product-4.png")
                             +item("@img/product-4.png")
                             +item("@img/product-4.png")
+            include components/popupProduct  
+            +popupProduct
             include components/footer
             +footer
         script(src="//code.jivosite.com/widget/6z1VSpkLX0" async)

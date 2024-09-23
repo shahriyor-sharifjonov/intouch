@@ -34,6 +34,7 @@
             @include res("padding-right", 16px);
             @include res("border-radius", 44px);
             @include res("font-size", 17px);
+            display: none;
 
             img {
                  @include res("margin-left", 10px);
@@ -153,6 +154,7 @@
             @include resa('height', 44px);
             @include resa('padding-left', 16px);
             @include resa('padding-right', 16px);
+            display: none;
 
             img {
                 box-shadow: 0px 7px 44px 0px rgba(41, 127, 255, 0.12);

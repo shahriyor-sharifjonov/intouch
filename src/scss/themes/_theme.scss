@@ -62,7 +62,7 @@ body{
     }
 }
 .catalog{
-    @include res("padding-top", 50px);
+    @include res("padding-top", 90px);
     @include res("padding-bottom", 150px);
     @include media(576){
         @include resa("padding-top", 32px);
