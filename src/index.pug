@@ -7,7 +7,7 @@ html(lang="en")
         link(rel="stylesheet", href="css/style.min.css")
         title Document
     body 
-        .wrapper 
+        .wrapper
             include components/header 
             +header 
             main.main 
@@ -17,11 +17,13 @@ html(lang="en")
                     include components/mission 
                     include components/product 
                     include components/whyus 
+                    include components/popup/product 
                     +hero
                     +about
                     +mission
                     +product
                     +whyus 
+                    +popupProduct
             include components/footer 
             +footer
         script(src="js/app.min.js") 
