@@ -17,11 +17,11 @@ $sizes: (1320:$xxl,
 $baseValueLarge: 1440px;
 $baseValueSmall: 392px;
 
-@mixin res($property, $value) {
-    #{$property}: calc(($value / $baseValueLarge) * 100vw);
+@mixin res($property, $value, $important: false) {
+    #{$property}: calc(($value / $baseValueLarge) * 100vw) #{if($important, '!important', '')};
 }
-@mixin resa($property, $value) {
-    #{$property}: calc(($value / $baseValueSmall) * 100vw);
+@mixin resa($property, $value, $important: false) {
+    #{$property}: calc(($value / $baseValueSmall) * 100vw) #{if($important, '!important', '')};
 }
 
 @mixin media($size) {

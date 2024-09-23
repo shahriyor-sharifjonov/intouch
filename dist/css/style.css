@@ -1933,11 +1933,11 @@
   height: 100%;
   background-color: white;
   position: relative;
+  overflow: auto;
   width: 26.1111111111vw;
   height: 29.9305555556vw;
   border-radius: 1.6666666667vw;
   padding: 1.3888888889vw;
-  overflow: auto;
 }
 
 .popup-right::-webkit-scrollbar {
@@ -2057,19 +2057,19 @@
 }
 
 .popup-btn {
-  width: 23.3333333333vw;
   background-color: #2AA02C;
   -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1215686275);
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.200000003px;
   position: sticky;
   bottom: 0;
+  width: 23.3333333333vw;
   padding: 0.8333333333vw;
   padding-left: 4.0277777778vw;
   padding-right: 4.0277777778vw;
   border-radius: 3.0555555556vw;
-  color: white;
-  font-weight: 500;
-  letter-spacing: 0.200000003px;
   font-size: 1.0416666667vw;
   line-height: 1.3888888889vw;
   margin-top: 1.3888888889vw;
@@ -2517,6 +2517,129 @@ body {
 
   .reviews__dolzhnost {
     font-size: 4.3367346939vw;
+  }
+
+  .popup-back {
+    top: 10.2040816327vw;
+    right: 13.2653061224vw;
+    width: 14.2857142857vw;
+    height: 14.2857142857vw;
+  }
+
+  .popup-back svg {
+    width: 8.1632653061vw;
+    height: 8.1632653061vw;
+  }
+
+  .popup-inner {
+    background-color: white;
+    width: 95.9183673469vw;
+    border-radius: 8.1632653061vw;
+    padding: 5.1020408163vw;
+    height: 90vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+
+  .popup-left .gallery-top {
+    border-width: 0.2551020408vw;
+    width: 61.2244897959vw;
+    height: 61.2244897959vw;
+    margin-bottom: 4.0816326531vw;
+    border-radius: 7.9081632653vw;
+  }
+
+  .popup-left .gallery-thumbs {
+    border-width: 0.2551020408vw;
+    width: 61.2244897959vw;
+    height: 16.3265306122vw;
+    border-radius: 5.1020408163vw;
+    padding: 2.0408163265vw;
+  }
+
+  .popup-left .gallery-thumbs .swiper-slide {
+    width: 14.2857142857vw !important;
+    height: 12.2448979592vw;
+  }
+
+  .popup-left .gallery-thumbs .swiper-slide .slide-container {
+    width: 12.2448979592vw;
+    height: 12.2448979592vw;
+    border-width: 0.2551020408vw;
+    border-radius: 3.0612244898vw;
+  }
+
+  .popup-right {
+    width: 95.9183673469vw;
+    height: 109.9489795918vw;
+    border-radius: 6.1224489796vw;
+    padding: 5.1020408163vw;
+  }
+
+  .popup-title {
+    font-size: 5.3571428571vw;
+    line-weight: 5.1020408163vw;
+    margin-bottom: 4.0816326531vw;
+  }
+
+  .popup-price {
+    font-size: 4.3367346939vw;
+    line-height: 6.1224489796vw;
+    margin-bottom: 4.0816326531vw;
+    letter-spacing: 0.0510204082vw;
+  }
+
+  .popup-char {
+    margin-bottom: 4.0816326531vw;
+  }
+
+  .popup-char__title {
+    font-size: 3.8265306122vw;
+    line-height: 5.1020408163vw;
+    margin-bottom: 3.0612244898vw;
+  }
+
+  .popup-char ul {
+    gap: 2.0408163265vw;
+  }
+
+  .popup-char ul li p {
+    font-size: 3.5714285714vw;
+    line-height: 4.2857142857vw;
+  }
+
+  .popup-char ul li p span {
+    margin-left: 2.0408163265vw;
+  }
+
+  .popup-download {
+    font-size: 3.5714285714vw;
+    line-height: 5.1020408163vw;
+  }
+
+  .popup-download svg {
+    width: 5.1020408163vw;
+    height: 5.1020408163vw;
+    margin-left: 2.0408163265vw;
+  }
+
+  .popup-btn {
+    width: 85.7142857143vw;
+    padding: 3.0612244898vw;
+    padding-left: 14.7959183673vw;
+    padding-right: 14.7959183673vw;
+    border-radius: 11.2244897959vw;
+    font-size: 3.8265306122vw;
+    line-height: 5.1020408163vw;
+    margin-top: 5.1020408163vw;
   }
 
   .container {
