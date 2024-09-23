@@ -2636,7 +2636,10 @@ body {
     width: 95.9183673469vw;
     border-radius: 8.1632653061vw;
     padding: 5.1020408163vw;
-    height: 90vh;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    max-height: 90vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
