@@ -50,37 +50,37 @@ mixin popupProduct()
                 .swiper.gallery-top
                     .swiper-wrapper
                         .swiper-slide
-                            img(src="@img/product-1.png", alt="")
+                            img(src="@img/product-1.png", alt="" draggable="false")
                         .swiper-slide
-                            img(src="@img/product-2.png", alt="")
+                            img(src="@img/product-2.png", alt="" draggable="false")
                         .swiper-slide
-                            img(src="@img/product-3.png", alt="")
+                            img(src="@img/product-3.png", alt="" draggable="false")
                         .swiper-slide
-                            img(src="@img/product-4.png", alt="")
+                            img(src="@img/product-4.png", alt="" draggable="false")
                         .swiper-slide
-                            img(src="@img/product-1.png", alt="")
+                            img(src="@img/product-1.png", alt="" draggable="false")
                         .swiper-slide
-                            img(src="@img/product-2.png", alt="")
+                            img(src="@img/product-2.png", alt="" draggable="false")
                 .swiper.gallery-thumbs
                     .swiper-wrapper
                         .swiper-slide
                             .slide-container 
-                                img(src="@img/product-1.png", alt="")
+                                img(src="@img/product-1.png", alt="" draggable="false")
                         .swiper-slide
                             .slide-container 
-                                img(src="@img/product-2.png", alt="")
+                                img(src="@img/product-2.png", alt="" draggable="false")
                         .swiper-slide
                             .slide-container 
-                                img(src="@img/product-3.png", alt="")
+                                img(src="@img/product-3.png", alt="" draggable="false")
                         .swiper-slide
                             .slide-container 
-                                img(src="@img/product-4.png", alt="")
+                                img(src="@img/product-4.png", alt="" draggable="false")
                         .swiper-slide
                             .slide-container 
-                                img(src="@img/product-1.png", alt="")
+                                img(src="@img/product-1.png", alt="" draggable="false")
                         .swiper-slide
                             .slide-container  
-                                img(src="@img/product-2.png", alt="")
+                                img(src="@img/product-2.png", alt="" draggable="false")
             .popup-right 
                 h2.popup-title Горизонтальный сенсорный инфокиоск 43″ silver
                 p.popup-price от 24 970 000 сум
@@ -104,5 +104,5 @@ mixin popupProduct()
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.9999 15.7142C15.3944 15.7142 15.7142 16.034 15.7142 16.4285C15.7142 16.823 15.3944 17.1428 14.9999 17.1428H4.99993C4.60544 17.1428 4.28564 16.823 4.28564 16.4285C4.28564 16.034 4.60544 15.7142 4.99993 15.7142H14.9999ZM9.99993 1.42847C10.3944 1.42847 10.7142 1.74826 10.7142 2.14275V11.8463L14.4949 8.06625C14.7738 7.7873 15.2261 7.7873 15.505 8.06625C15.784 8.34519 15.784 8.79745 15.505 9.0764L10.505 14.0764C10.2261 14.3553 9.7738 14.3553 9.49485 14.0764L4.49485 9.0764C4.21591 8.79745 4.21591 8.34519 4.49485 8.06625C4.7738 7.7873 5.22606 7.7873 5.50501 8.06625L9.28564 11.8463V2.14275C9.28564 1.74826 9.60544 1.42847 9.99993 1.42847Z" fill="#2688EB"/>
                     </svg>
-                button(type='button').popup-btn Оформить заказ
+                button(type='button' data-target="#order").popup-open.popup-btn Оформить заказ
                     

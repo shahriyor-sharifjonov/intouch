@@ -249,6 +249,7 @@ body{
     @include res('width', 360px);
     @include res('height', 439px);
     @include media(576){
+        align-items: stretch;
         @include resa('padding-top', 20px);
         @include resa('padding-bottom', 20px);
         @include resa('padding-left', 12px);

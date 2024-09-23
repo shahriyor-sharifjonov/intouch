@@ -2825,6 +2825,9 @@ body {
   }
 
   .order {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding-top: 5.1020408163vw;
     padding-bottom: 5.1020408163vw;
     padding-left: 3.0612244898vw;
