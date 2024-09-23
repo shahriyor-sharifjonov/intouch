@@ -1727,6 +1727,7 @@
 .popup-right {
   height: 100%;
   background-color: white;
+  position: relative;
   width: 26.1111111111vw;
   border-radius: 1.6666666667vw;
   padding: 1.3888888889vw;
@@ -1764,6 +1765,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-bottom: 1.1111111111vw;
 }
 
 .popup-char__title {
@@ -1783,9 +1785,81 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0.5555555556vw;
+}
+
+.popup-char ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.popup-char ul li p {
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  text-align: left;
+  color: #B8C4D7;
+  font-size: 0.9722222222vw;
+  line-height: 1.1666666667vw;
+}
+
+.popup-char ul li p span {
+  color: black;
+  margin-left: 0.5555555556vw;
+}
+
+.popup-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  text-align: left;
+  font-size: 0.9722222222vw;
+  line-height: 1.3888888889vw;
+}
+
+.popup-download svg {
+  width: 1.3888888889vw;
+  height: 1.3888888889vw;
+  margin-left: 0.5555555556vw;
+}
+
+.popup-btn {
+  width: 23.3333333333vw;
+  background-color: #2AA02C;
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.1215686275);
+  position: absolute;
+  bottom: 1.3888888889vw;
+  padding: 0.8333333333vw;
+  padding-left: 4.0277777778vw;
+  padding-right: 4.0277777778vw;
+  border-radius: 3.0555555556vw;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 0.200000003px;
+  font-size: 1.0416666667vw;
+  line-height: 1.3888888889vw;
 }
 
 * {
