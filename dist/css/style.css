@@ -935,6 +935,7 @@
   padding-right: 1.1111111111vw;
   border-radius: 3.0555555556vw;
   font-size: 1.1805555556vw;
+  display: none;
 }
 
 .mission__topbar a img {
@@ -3131,6 +3132,7 @@ body {
     height: 11.2244897959vw;
     padding-left: 4.0816326531vw;
     padding-right: 4.0816326531vw;
+    display: none;
   }
 
   .mission__more img {
