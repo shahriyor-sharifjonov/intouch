@@ -63,19 +63,33 @@ body{
 }
 .catalog{
     @include res("padding-top", 50px);
+    @include res("padding-bottom", 150px);
+    @include media(576){
+        @include resa("padding-top", 32px);
+        @include resa("padding-bottom", 80px);
+    }
     &__title{
         font-weight: 600;
         line-height: 120%;
         color: #fff;
         @include res('margin-bottom', 24px);
         @include res('font-size', 32px);
+        @include media(576){
+            @include resa('margin-bottom', 24px);
+            @include resa('font-size', 32px);
+        }
     }
     &__menu{
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-wrap: wrap;
         @include res('gap', 12px);
         @include res('margin-bottom', 24px);
+        @include media(576){
+            @include resa('gap', 12px);
+            @include resa('margin-bottom', 24px);
+        }
     }
     &__btn{
         background: #FFFFFF;
@@ -88,6 +102,15 @@ body{
         @include res('padding-bottom', 12px);
         @include res('padding-left', 16px);
         @include res('padding-right', 16px);
+        @include media(576){
+            @include resa('border-width', 1px);
+            @include resa('border-radius', 46px);
+            @include resa('font-size', 14px);
+            @include resa('padding-top', 8px);
+            @include resa('padding-bottom', 8px);
+            @include resa('padding-left', 12px);
+            @include resa('padding-right', 12px);
+        }
         &.active{
             background: #297FFF;
             color: #fff;
@@ -95,18 +118,122 @@ body{
         }
     }
     &__item{
-        @include res('width', 360px);
+        background: #fff;
+        overflow: hidden;
+        text-align: left;
+        @include res('width', 382px);
+        @include res('border-radius', 24px);
+        @include media(576){
+            width: 100%;
+            @include resa('border-radius', 18px);
+        }
         &-img{
-            aspect-ratio: 16/9;
+            aspect-ratio: 4/3;
             line-height: 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
+            position: relative;
+            @include res('border-radius', 24px);
+            @include media(576){
+                @include resa('border-radius', 18px);
+            }
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
+        }
+        &-span{
+            color: #FFFFFF;
+            position: absolute;
+            background: #E23778;
+            border: solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            @include res('border-radius', 40px);
+            @include res('font-size', 15px);
+            @include res('line-height', 20px);
+            @include res('border-width', 1px);
+            @include res('top', 16px);
+            @include res('left', 16px);
+            @include res('padding-top', 8px);
+            @include res('padding-bottom', 8px);
+            @include res('padding-left', 16px);
+            @include res('padding-right', 16px);
+            @include media(576){
+                @include resa('border-radius', 40px);
+                @include resa('font-size', 15px);
+                @include resa('line-height', 20px);
+                @include resa('border-width', 1px);
+                @include resa('top', 16px);
+                @include resa('left', 16px);
+                @include resa('padding-top', 8px);
+                @include resa('padding-bottom', 8px);
+                @include resa('padding-left', 16px);
+                @include resa('padding-right', 16px);
+            }
+        }
+        &-content{
+            @include res('padding', 16px);
+            @include res('padding-bottom', 24px);
+            padding-top: 0;
+            @include media(576){
+                @include resa('padding', 16px);
+                @include resa('padding-bottom', 24px);
+                padding-top: 0;
+            }
+        }
+        &-price{
+            font-weight: 600;
+            @include res('margin-bottom', 8px);
+            @include res('font-size', 20px);
+            @include media(576){
+                @include resa('margin-bottom', 8px);
+                @include resa('font-size', 20px);
+            }
+        }
+        &-title{
+            color: #598491;
+            font-weight: 500;
+            @include res('font-size', 16px);
+            @include res('margin-bottom', 12px);
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('margin-bottom', 12px);
+            }
+        }
+        &-btn{
+            background: #297FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 500;
+            @include res('font-size', 17px);
+            @include res('line-height', 22px);
+            @include res('border-radius', 48px);
+            @include res('height', 48px);
+            @include media(576){
+                @include resa('font-size', 17px);
+                @include resa('line-height', 22px);
+                @include resa('border-radius', 48px);
+                @include resa('height', 48px);
+            }
+        }
+    }
+    &__content{
+        flex-wrap: wrap;
+        display: none;
+        @include res('gap', 24px);
+        @include media(576){
+            @include resa('gap', 24px);
+        }
+        &.active{
+            display: flex;
         }
     }
 }

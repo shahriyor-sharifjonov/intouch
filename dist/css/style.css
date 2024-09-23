@@ -1734,6 +1734,7 @@ body {
 
 .catalog {
   padding-top: 3.4722222222vw;
+  padding-bottom: 10.4166666667vw;
 }
 
 .catalog__title {
@@ -1754,6 +1755,8 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 0.8333333333vw;
   margin-bottom: 1.6666666667vw;
 }
@@ -1778,11 +1781,15 @@ body {
 }
 
 .catalog__item {
-  width: 25vw;
+  background: #fff;
+  overflow: hidden;
+  text-align: left;
+  width: 26.5277777778vw;
+  border-radius: 1.6666666667vw;
 }
 
 .catalog__item-img {
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   line-height: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1793,6 +1800,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 1.6666666667vw;
 }
 
 .catalog__item-img img {
@@ -1800,6 +1810,84 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.catalog__item-span {
+  color: #FFFFFF;
+  position: absolute;
+  background: #E23778;
+  border: solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  border-radius: 2.7777777778vw;
+  font-size: 1.0416666667vw;
+  line-height: 1.3888888889vw;
+  border-width: 0.0694444444vw;
+  top: 1.1111111111vw;
+  left: 1.1111111111vw;
+  padding-top: 0.5555555556vw;
+  padding-bottom: 0.5555555556vw;
+  padding-left: 1.1111111111vw;
+  padding-right: 1.1111111111vw;
+}
+
+.catalog__item-content {
+  padding: 1.1111111111vw;
+  padding-bottom: 1.6666666667vw;
+  padding-top: 0;
+}
+
+.catalog__item-price {
+  font-weight: 600;
+  margin-bottom: 0.5555555556vw;
+  font-size: 1.3888888889vw;
+}
+
+.catalog__item-title {
+  color: #598491;
+  font-weight: 500;
+  font-size: 1.1111111111vw;
+  margin-bottom: 0.8333333333vw;
+}
+
+.catalog__item-btn {
+  background: #297FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1805555556vw;
+  line-height: 1.5277777778vw;
+  border-radius: 3.3333333333vw;
+  height: 3.3333333333vw;
+}
+
+.catalog__content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+  gap: 1.6666666667vw;
+}
+
+.catalog__content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 576px) {
@@ -2005,6 +2093,80 @@ body {
 
   .title {
     font-size: 6.1224489796vw;
+  }
+
+  .catalog {
+    padding-top: 8.1632653061vw;
+    padding-bottom: 20.4081632653vw;
+  }
+
+  .catalog__title {
+    margin-bottom: 6.1224489796vw;
+    font-size: 8.1632653061vw;
+  }
+
+  .catalog__menu {
+    gap: 3.0612244898vw;
+    margin-bottom: 6.1224489796vw;
+  }
+
+  .catalog__btn {
+    border-width: 0.2551020408vw;
+    border-radius: 11.7346938776vw;
+    font-size: 3.5714285714vw;
+    padding-top: 2.0408163265vw;
+    padding-bottom: 2.0408163265vw;
+    padding-left: 3.0612244898vw;
+    padding-right: 3.0612244898vw;
+  }
+
+  .catalog__item {
+    width: 100%;
+    border-radius: 4.5918367347vw;
+  }
+
+  .catalog__item-img {
+    border-radius: 4.5918367347vw;
+  }
+
+  .catalog__item-span {
+    border-radius: 10.2040816327vw;
+    font-size: 3.8265306122vw;
+    line-height: 5.1020408163vw;
+    border-width: 0.2551020408vw;
+    top: 4.0816326531vw;
+    left: 4.0816326531vw;
+    padding-top: 2.0408163265vw;
+    padding-bottom: 2.0408163265vw;
+    padding-left: 4.0816326531vw;
+    padding-right: 4.0816326531vw;
+  }
+
+  .catalog__item-content {
+    padding: 4.0816326531vw;
+    padding-bottom: 6.1224489796vw;
+    padding-top: 0;
+  }
+
+  .catalog__item-price {
+    margin-bottom: 2.0408163265vw;
+    font-size: 5.1020408163vw;
+  }
+
+  .catalog__item-title {
+    font-size: 4.0816326531vw;
+    margin-bottom: 3.0612244898vw;
+  }
+
+  .catalog__item-btn {
+    font-size: 4.3367346939vw;
+    line-height: 5.612244898vw;
+    border-radius: 12.2448979592vw;
+    height: 12.2448979592vw;
+  }
+
+  .catalog__content {
+    gap: 6.1224489796vw;
   }
 }
 
