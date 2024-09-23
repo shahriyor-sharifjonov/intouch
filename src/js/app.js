@@ -51,15 +51,12 @@ const swiper2 = new Swiper('.whyus__swiper', {
 var galleryThumbs = new Swiper('.gallery-thumbs', {
   spaceBetween: 0,
   slidesPerView: 4,
-  loop: true,
-  freeMode: true,
-  watchSlidesVisibility: true,
-  watchSlidesProgress: true,
+  loop: false,
 });
 
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
-  loop: true,
+  loop: false,
   thumbs: {
     swiper: galleryThumbs
   }

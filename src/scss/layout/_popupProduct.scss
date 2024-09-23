@@ -1,7 +1,4 @@
 .popupProduct {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .popup {
@@ -16,7 +13,10 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 200ms;
+    transition: 300ms ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &.active {
         visibility: visible;
@@ -135,7 +135,7 @@
             }
 
             .swiper-slide {
-                @include res('width', 80px);
+                @include res('width', 82px);
                 @include res('height', 64px);
 
                 @include media(576){
