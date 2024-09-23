@@ -1,0 +1,71 @@
+mixin item()
+    button(type="button").catalog__item 
+        .catalog__item-img 
+            img(src="@img/product-1.png", alt="" draggable="false")
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Каталог - Intouch
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                .container 
+                    .catalog 
+                        h1.catalog__title Каталог товаров
+                        .catalog__menu 
+                            button(type="button" data-target="#panel").catalog__btn.active Сенсорные панели
+                            button(type="button" data-target="#kiosk").catalog__btn Сенсорные информационные киоски
+                            button(type="button" data-target="#stend").catalog__btn Мобильный стенд
+                            button(type="button" data-target="#proccessor").catalog__btn Процессор
+                        .catalog__content.active#panel 
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                        .catalog__content#kiosk 
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                        .catalog__content#stend 
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                        .catalog__content#proccessor 
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+                            +item
+            include components/footer
+            +footer
+        script(src="//code.jivosite.com/widget/6z1VSpkLX0" async)
+        script(src="js/app.min.js")

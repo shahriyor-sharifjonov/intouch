@@ -61,3 +61,52 @@ body{
         @include resa('font-size', 24px);
     }
 }
+.catalog{
+    @include res("padding-top", 50px);
+    &__title{
+        font-weight: 600;
+        line-height: 120%;
+        color: #fff;
+        @include res('margin-bottom', 24px);
+        @include res('font-size', 32px);
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 12px);
+        @include res('margin-bottom', 24px);
+    }
+    &__btn{
+        background: #FFFFFF;
+        text-transform: uppercase;
+        border: solid #6183A280;
+        @include res('border-width', 1px);
+        @include res('border-radius', 46px);
+        @include res('font-size', 16px);
+        @include res('padding-top', 12px);
+        @include res('padding-bottom', 12px);
+        @include res('padding-left', 16px);
+        @include res('padding-right', 16px);
+        &.active{
+            background: #297FFF;
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+    &__item{
+        @include res('width', 360px);
+        &-img{
+            aspect-ratio: 16/9;
+            line-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
