@@ -48,6 +48,23 @@ const swiper2 = new Swiper('.whyus__swiper', {
     },
 });
 
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 0,
+  slidesPerView: 4,
+  loop: true,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  loop: true,
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
+
 const headerButton = document.querySelector(".header__button");
 const headerMenu = document.querySelector(".header__menu");
 const menuLinks = document.querySelectorAll(".header__menu-link");
