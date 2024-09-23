@@ -2248,9 +2248,6 @@ body {
 }
 
 .order__title {
-  border-radius: 0.8333333333vw;
-  height: 3.8888888889vw;
-  margin-bottom: 0.8333333333vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2262,9 +2259,12 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  font-size: 1.4583333333vw;
   line-height: 120%;
   background: #152040;
+  font-size: 1.4583333333vw;
+  border-radius: 0.8333333333vw;
+  height: 3.8888888889vw;
+  margin-bottom: 0.8333333333vw;
 }
 
 .order__input {
@@ -2276,6 +2276,7 @@ body {
   height: 3.0555555556vw;
   padding-left: 1.1111111111vw;
   padding-right: 1.1111111111vw;
+  font-size: 0.9722222222vw;
 }
 
 .order__input::-webkit-input-placeholder {
@@ -2606,6 +2607,46 @@ body {
 
   .catalog__content {
     gap: 6.1224489796vw;
+  }
+
+  .order {
+    padding-top: 5.1020408163vw;
+    padding-bottom: 5.1020408163vw;
+    padding-left: 3.0612244898vw;
+    padding-right: 3.0612244898vw;
+    width: 95.9183673469vw;
+    height: 111.9897959184vw;
+  }
+
+  .order .popup-back {
+    top: 8.9285714286vw;
+    right: 8.9285714286vw;
+  }
+
+  .order__title {
+    font-size: 5.3571428571vw;
+    border-radius: 3.0612244898vw;
+    height: 14.2857142857vw;
+    margin-bottom: 3.0612244898vw;
+  }
+
+  .order__input {
+    margin-bottom: 3.0612244898vw;
+    border-radius: 3.0612244898vw;
+    border-width: 0.2551020408vw;
+    height: 11.2244897959vw;
+    padding-left: 4.0816326531vw;
+    padding-right: 4.0816326531vw;
+    font-size: 3.5714285714vw;
+  }
+
+  .order__input.textarea {
+    padding-top: 4.0816326531vw;
+    height: 27.806122449vw;
+  }
+
+  .order .contact__form-btn {
+    height: 12.7551020408vw;
   }
 }
 
