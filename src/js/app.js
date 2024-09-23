@@ -47,3 +47,38 @@ const swiper2 = new Swiper('.whyus__swiper', {
         clickable: true,
     },
 });
+
+const headerButton = document.querySelector(".header__button");
+const headerMenu = document.querySelector(".header__menu");
+const menuLinks = document.querySelectorAll(".header__menu-link");
+let menuOpened = false;
+
+const menuToggle = () => {
+  menuOpened = !menuOpened;
+  headerButton.classList.toggle("open");
+  headerMenu.classList.toggle("open");
+
+  // Disable scroll when menu is open
+  if (menuOpened) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = ""; // Restore default overflow
+  }
+};
+
+headerButton.onclick = menuToggle;
+
+window.onclick = (e) => {
+  if (
+    menuOpened &&
+    !e.composedPath().includes(headerButton) &&
+    !e.composedPath().includes(headerMenu)
+  )
+    menuToggle();
+};
+
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle();
+    });
+  });

@@ -2,6 +2,7 @@
     @include res('padding-bottom', 80px);
     @include media(576){
         padding-bottom: 0;
+        @include resa('padding-top', 88px);
     }
     &__main{
         width: 100%;
