@@ -1869,6 +1869,9 @@ body {
   background: #FFFFFF;
   text-transform: uppercase;
   border: solid #6183A280;
+  -webkit-transition: 300ms ease-out;
+  -o-transition: 300ms ease-out;
+  transition: 300ms ease-out;
   border-width: 0.0694444444vw;
   border-radius: 3.1944444444vw;
   font-size: 1.1111111111vw;

@@ -95,6 +95,7 @@ body{
         background: #FFFFFF;
         text-transform: uppercase;
         border: solid #6183A280;
+        transition: 300ms ease-out;
         @include res('border-width', 1px);
         @include res('border-radius', 46px);
         @include res('font-size', 16px);
