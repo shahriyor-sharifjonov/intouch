@@ -135,7 +135,7 @@
         @include resa('gap', 20px);
         @include resa('padding-left', 20px);
         @include resa('padding-top', 40px);
-        @include resa('padding-bottom', 26px);
+        @include resa('padding-bottom', 40px);
         &.open{
             opacity: 1;
             visibility: visible;
