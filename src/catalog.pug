@@ -1,7 +1,7 @@
-mixin item()
+mixin item(img)
     button(type="button").catalog__item 
         .catalog__item-img 
-            img(src="@img/product-1.png", alt="" draggable="false")
+            img(src=img, alt="" draggable="false")
             span.catalog__item-span Новинка
         .catalog__item-content
             p.catalog__item-price от 6 300 000 сум
@@ -27,49 +27,49 @@ html(lang="en")
                         h1.catalog__title Каталог товаров
                         .catalog__menu 
                             button(type="button" data-target="#panel").catalog__btn.active Сенсорные панели 
-                            button(type="button" data-target="#kiosk").catalog__btn Сенсорные киоски 
+                            button(type="button" data-target="#kiosk").catalog__btn Информационные киоски 
                             button(type="button" data-target="#stend").catalog__btn Мобильный стенд 
                             button(type="button" data-target="#proccessor").catalog__btn Процессор 
                         .catalog__content.active#panel 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
                         .catalog__content#kiosk 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
                         .catalog__content#stend 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
                         .catalog__content#proccessor 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
-                            +item 
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
             include components/footer
             +footer
         script(src="//code.jivosite.com/widget/6z1VSpkLX0" async)

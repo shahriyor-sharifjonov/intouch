@@ -95,6 +95,7 @@ body{
         background: #FFFFFF;
         text-transform: uppercase;
         border: solid #6183A280;
+        transition: 300ms ease-out;
         @include res('border-width', 1px);
         @include res('border-radius', 46px);
         @include res('font-size', 16px);
@@ -128,7 +129,7 @@ body{
             @include resa('border-radius', 18px);
         }
         &-img{
-            aspect-ratio: 4/3;
+            aspect-ratio: 1/1;
             line-height: 0;
             display: flex;
             align-items: center;

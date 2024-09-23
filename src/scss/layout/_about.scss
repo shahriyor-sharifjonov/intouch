@@ -211,7 +211,7 @@
     }
 
     @media screen and (max-width:576px) {
-        @include resa('padding-top', 0px);
+        @include resa('padding-top', 88px);
         @include resa('margin-top', 0px);
         &__main {
             display: flex;
@@ -225,7 +225,6 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            @include resa('margin-top', 88px);
     
             span {
                 color: $white;

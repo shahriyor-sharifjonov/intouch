@@ -60,6 +60,101 @@
         justify-content: center;
     }
 
+    &__button {
+        @include resa('width', 30px);
+        @include resa('height', 30px);
+        position: relative;
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+    
+        @include media(576) {
+          display: block;
+        }
+
+        &.open {
+
+            .header__button-line,
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(135deg);
+            }
+
+            &::after {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-135deg);
+            }
+        }
+
+        &::before,
+        &::after,
+        &-line {
+            transition: 0.5s;
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 100%;
+            @include resa('height', 3px);
+            background: #297FFF;
+            @include resa('border-radius', 4px);
+        }
+
+        &::before {
+            top: 20%;
+        }
+
+        &::after {
+            bottom: 20%;
+        }
+
+        &-line {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__menu{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        background: #000;
+        display: none;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        height: calc(100vh - 17.6020408163vw);
+        transition: 300ms ease-out;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @include resa('top', 69px);
+        @include resa('gap', 20px);
+        @include resa('padding-left', 20px);
+        @include resa('padding-top', 40px);
+        @include resa('padding-bottom', 26px);
+        &.open{
+            opacity: 1;
+            visibility: visible;
+        }
+        @include media(576){
+            display: flex;
+        }
+
+        &-link{
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            @include resa('font-size', 24px);
+            &.mta{
+                margin-top: auto;
+            }
+        }
+    }
+
     &__inner-burger {
         display: none;
     }

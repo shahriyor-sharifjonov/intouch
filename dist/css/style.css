@@ -217,6 +217,108 @@
           justify-content: center;
 }
 
+.header__button {
+  width: 7.6530612245vw;
+  height: 7.6530612245vw;
+  position: relative;
+  border: none;
+  outline: none;
+  background: none;
+  display: none;
+}
+
+.header__button.open .header__button-line,
+.header__button.open::before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(135deg);
+      -ms-transform: translate(-50%, -50%) rotate(135deg);
+          transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.header__button.open::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+      -ms-transform: translate(-50%, -50%) rotate(-135deg);
+          transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.header__button::before,
+.header__button::after,
+.header__button-line {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 0.7653061224vw;
+  background: #297FFF;
+  border-radius: 1.0204081633vw;
+}
+
+.header__button::before {
+  top: 20%;
+}
+
+.header__button::after {
+  bottom: 20%;
+}
+
+.header__button-line {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header__menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: #000;
+  display: none;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  height: calc(100vh - 17.6020408163vw);
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: 17.6020408163vw;
+  gap: 5.1020408163vw;
+  padding-left: 5.1020408163vw;
+  padding-top: 10.2040816327vw;
+  padding-bottom: 6.6326530612vw;
+}
+
+.header__menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__menu-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 6.1224489796vw;
+}
+
+.header__menu-link.mta {
+  margin-top: auto;
+}
+
 .header__inner-burger {
   display: none;
 }
@@ -1971,6 +2073,8 @@ body {
   background: #FFFFFF;
   text-transform: uppercase;
   border: solid rgba(97, 131, 162, 0.5019607843);
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
   border-width: 0.0694444444vw;
   border-radius: 3.1944444444vw;
   font-size: 1.1111111111vw;
@@ -1995,7 +2099,7 @@ body {
 }
 
 .catalog__item-img {
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   line-height: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2105,6 +2209,16 @@ body {
   .header__main {
     padding-top: 3.3163265306vw;
     padding-bottom: 3.3163265306vw;
+  }
+
+  .header__button {
+    display: block;
+  }
+
+  .header__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .hero__p {
@@ -2229,6 +2343,7 @@ body {
 
   .reviews {
     padding-bottom: 0;
+    padding-top: 22.4489795918vw;
   }
 
   .reviews .swiper-slide {
@@ -2669,7 +2784,7 @@ body {
   }
 
   .about {
-    padding-top: 0vw;
+    padding-top: 22.4489795918vw;
     margin-top: 0vw;
   }
 
@@ -2696,7 +2811,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 22.4489795918vw;
   }
 
   .about__topbar span {
@@ -3197,6 +3311,10 @@ body {
     display: none;
   }
 
+  .partners {
+    padding-top: 22.4489795918vw;
+  }
+
   .partners__topbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3207,7 +3325,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 22.4489795918vw;
   }
 
   .partners__topbar span {
@@ -3259,7 +3376,7 @@ body {
   }
 
   .contact {
-    padding-top: 0vw;
+    padding-top: 22.4489795918vw;
   }
 
   .contact__topbar {
@@ -3272,7 +3389,6 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 22.4489795918vw;
   }
 
   .contact__topbar span {
