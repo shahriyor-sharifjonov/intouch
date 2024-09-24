@@ -2187,6 +2187,7 @@ body {
   background: #FFFFFF;
   text-transform: uppercase;
   border: solid #6183A280;
+  color: #000;
   -webkit-transition: 300ms ease-out;
   -o-transition: 300ms ease-out;
   transition: 300ms ease-out;
