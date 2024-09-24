@@ -261,8 +261,10 @@ body{
         @include res('top', 35px);
         @include res('right', 35px);
         @include media(576){
-            @include resa('top', 35px);
-            @include resa('right', 35px);
+            @include resa('top', 40px);
+            @include resa('right', 52px);
+            @include resa('width', 56px);
+            @include resa('height', 56px);
         }
     }
     &__title{

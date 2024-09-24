@@ -2840,8 +2840,10 @@ body {
   }
 
   .order .popup-back {
-    top: 8.9285714286vw;
-    right: 8.9285714286vw;
+    top: 10.2040816327vw;
+    right: 13.2653061224vw;
+    width: 14.2857142857vw;
+    height: 14.2857142857vw;
   }
 
   .order__title {
