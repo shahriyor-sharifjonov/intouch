@@ -1,0 +1,370 @@
+// Тема по умолчанию
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    &:focus,
+    &:active{
+        outline: none;
+    }
+}
+html,
+body{
+    height: 100%;
+    background-color: $black;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    .main{
+        flex: 1 1 auto;
+    }
+}
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    color: inherit;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    font-size: 16px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    @include res('width', 1194px);
+    @include media(576){
+        @include resa('width', 360px);
+    }
+}
+.title{
+    @include res('font-size', 32px);
+    @include media(576){
+        @include resa('font-size', 24px);
+    }
+}
+.catalog{
+    @include res("padding-top", 90px);
+    @include res("padding-bottom", 150px);
+    @include media(576){
+        @include resa("padding-top", 32px);
+        @include resa("padding-bottom", 80px);
+    }
+    &__title{
+        font-weight: 600;
+        line-height: 120%;
+        color: #fff;
+        @include res('margin-bottom', 24px);
+        @include res('font-size', 32px);
+        @include media(576){
+            @include resa('margin-bottom', 24px);
+            @include resa('font-size', 32px);
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        @include res('gap', 12px);
+        @include res('margin-bottom', 24px);
+        @include media(576){
+            @include resa('gap', 12px);
+            @include resa('margin-bottom', 24px);
+        }
+    }
+    &__btn{
+        background: #FFFFFF;
+        text-transform: uppercase;
+        border: solid #6183A280;
+        color: #000;
+        transition: 300ms ease-out;
+        @include res('border-width', 1px);
+        @include res('border-radius', 46px);
+        @include res('font-size', 16px);
+        @include res('padding-top', 12px);
+        @include res('padding-bottom', 12px);
+        @include res('padding-left', 16px);
+        @include res('padding-right', 16px);
+        @include media(576){
+            @include resa('border-width', 1px);
+            @include resa('border-radius', 46px);
+            @include resa('font-size', 14px);
+            @include resa('padding-top', 8px);
+            @include resa('padding-bottom', 8px);
+            @include resa('padding-left', 12px);
+            @include resa('padding-right', 12px);
+        }
+        &.active{
+            background: #297FFF;
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+    &__item{
+        background: #fff;
+        overflow: hidden;
+        text-align: left;
+        @include res('width', 382px);
+        @include res('border-radius', 24px);
+        @include media(576){
+            width: 100%;
+            @include resa('border-radius', 18px);
+        }
+        &-img{
+            aspect-ratio: 1/1;
+            line-height: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+            @include res('border-radius', 24px);
+            @include media(576){
+                @include resa('border-radius', 18px);
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-span{
+            color: #FFFFFF;
+            position: absolute;
+            background: #E23778;
+            border: solid #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            @include res('border-radius', 40px);
+            @include res('font-size', 15px);
+            @include res('line-height', 20px);
+            @include res('border-width', 1px);
+            @include res('top', 16px);
+            @include res('left', 16px);
+            @include res('padding-top', 8px);
+            @include res('padding-bottom', 8px);
+            @include res('padding-left', 16px);
+            @include res('padding-right', 16px);
+            @include media(576){
+                @include resa('border-radius', 40px);
+                @include resa('font-size', 15px);
+                @include resa('line-height', 20px);
+                @include resa('border-width', 1px);
+                @include resa('top', 16px);
+                @include resa('left', 16px);
+                @include resa('padding-top', 8px);
+                @include resa('padding-bottom', 8px);
+                @include resa('padding-left', 16px);
+                @include resa('padding-right', 16px);
+            }
+        }
+        &-content{
+            @include res('padding', 16px);
+            @include res('padding-bottom', 24px);
+            padding-top: 0;
+            @include media(576){
+                @include resa('padding', 16px);
+                @include resa('padding-bottom', 24px);
+                padding-top: 0;
+            }
+        }
+        &-price{
+            font-weight: 600;
+            @include res('margin-bottom', 8px);
+            @include res('font-size', 20px);
+            @include media(576){
+                @include resa('margin-bottom', 8px);
+                @include resa('font-size', 20px);
+            }
+        }
+        &-title{
+            color: #598491;
+            font-weight: 500;
+            @include res('font-size', 16px);
+            @include res('margin-bottom', 12px);
+            @include media(576){
+                @include resa('font-size', 16px);
+                @include resa('margin-bottom', 12px);
+            }
+        }
+        &-btn{
+            background: #297FFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 500;
+            @include res('font-size', 17px);
+            @include res('line-height', 22px);
+            @include res('border-radius', 48px);
+            @include res('height', 48px);
+            @include media(576){
+                @include resa('font-size', 17px);
+                @include resa('line-height', 22px);
+                @include resa('border-radius', 48px);
+                @include resa('height', 48px);
+            }
+        }
+    }
+    &__content{
+        flex-wrap: wrap;
+        display: none;
+        @include res('gap', 24px);
+        @include media(576){
+            @include resa('gap', 24px);
+        }
+        &.active{
+            display: flex;
+        }
+    }
+}
+.order{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    @include res('padding-top', 20px);
+    @include res('padding-bottom', 20px);
+    @include res('padding-left', 12px);
+    @include res('padding-right', 12px);
+    @include res('width', 360px);
+    @include res('height', 439px);
+    @include media(576){
+        align-items: stretch;
+        @include resa('padding-top', 20px);
+        @include resa('padding-bottom', 20px);
+        @include resa('padding-left', 12px);
+        @include resa('padding-right', 12px);
+        @include resa('width', 376px);
+        @include resa('height', 439px);
+    }
+    .popup-back{
+        @include res('top', 35px);
+        @include res('right', 35px);
+        @include media(576){
+            @include resa('top', 40px);
+            @include resa('right', 52px);
+            @include resa('width', 56px);
+            @include resa('height', 56px);
+        }
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        justify-content: center;
+        color: #fff;
+        line-height: 120%;
+        background: #152040;
+        @include res('font-size', 21px);
+        @include res('border-radius', 12px);
+        @include res('height', 56px);
+        @include res('margin-bottom', 12px);
+        @include media(576){
+            @include resa('font-size', 21px);
+            @include resa('border-radius', 12px);
+            @include resa('height', 56px);
+            @include resa('margin-bottom', 12px);
+        }
+    }
+    &__input{
+        background: #F7F8FA;
+        border: solid #B8C4D7;
+        @include res('margin-bottom', 12px);
+        @include res('border-radius', 12px);
+        @include res('border-width', 1px);
+        @include res('height', 44px);
+        @include res('padding-left', 16px);
+        @include res('padding-right', 16px);
+        @include res('font-size', 14px);
+        @include media(576){
+            @include resa('margin-bottom', 12px);
+            @include resa('border-radius', 12px);
+            @include resa('border-width', 1px);
+            @include resa('height', 44px);
+            @include resa('padding-left', 16px);
+            @include resa('padding-right', 16px);
+            @include resa('font-size', 14px);
+        }
+        &::placeholder{
+            color: #B8C4D7;
+        }
+        &.textarea{
+            @include res('padding-top', 16px);
+            @include res('height', 109px);
+            @include media(576){
+                @include resa('padding-top', 16px);
+                @include resa('height', 109px);
+            }
+        }
+    }
+    .contact__form-btn{
+        @include res('height', 50px);
+        @include media(576){
+            @include resa('height', 50px);
+        }
+    }
+    .contact__form-check{
+        width: 100%;
+        margin-top: auto;
+        @include res('padding-left', 12px);
+        @include res('padding-right', 12px);
+        a{
+            color: #297FFF;
+        }
+    }
+}
+
+.video{
+    aspect-ratio: 9/16;
+    height: auto;
+    padding: 0;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border: solid #fff;
+    @include res('border-width', 2px);
+    @include media(576){
+        height: auto;
+        width: auto;
+        padding: 0;
+        max-width: 90%;
+        max-height: 90%;
+        @include resa('border-width', 2px);
+    }
+    video{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: none;
+        @include res('border-radius', 32px);
+        @include media(576){
+            @include resa('border-radius', 32px);
+        }
+    }
+}

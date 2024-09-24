@@ -1,0 +1,22 @@
+mixin product()
+    .product#products 
+        .product__topbar
+            span Продукты
+        div.product__main 
+            button(type="button" data-target="#productPopup").product__main-item.popup-open 
+                img(src="@img/pr1.png", alt="" draggable="false")
+            button(type="button" data-target="#productPopup").product__main-item.popup-open 
+                img(src="@img/pr2.png", alt="" draggable="false")
+            button(type="button" data-target="#productPopup").product__main-item.popup-open 
+                img(src="@img/pr3.png", alt="" draggable="false")
+            a(href="catalog.html").product__main-item 
+                img(src="@img/pr4.png", alt="" draggable="false")
+                .product__main-item-link 
+                    img(src="@img/product.svg", alt="" draggable="false")
+                    p Узнать больше 
+            a(href="catalog.html").product__main-item 
+                img(src="@img/pr5.png", alt="" draggable="false").product__main-item-pic
+                div.product__more Подробнее
+                    img(src="@img/arrow-right.svg", alt="arrow" draggable="false")
+
+            

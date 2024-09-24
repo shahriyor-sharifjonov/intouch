@@ -1,0 +1,249 @@
+.hero {
+    @include res("margin-top", 50px);
+    &__title {
+        color: $white;
+        display: flex;
+        flex-direction: column;
+    }
+    &__p{
+        display: none;
+        @include media(576){
+            display: block;
+            font-weight: 500;
+            @include resa('margin-top', 12px);
+            @include resa('margin-bottom', 25px);
+            @include resa('max-width', 270px);
+            @include resa('font-size', 16px);
+        }
+    }
+    &__inner {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__inner-text {
+        font-weight: 500;
+        @include res("font-size", 76px);
+    }
+    &__inner-subtext {
+        font-weight: 500;
+        @include res("font-size", 76px);
+        @include res("margin-left", 16px);
+        color: #297fff;
+    }
+
+    &__inner-info {
+        @include res("width", 260px);
+        @include res("font-size", 16px);
+        @include res("line-height", 18px);
+        @include res("margin-left", 22px);
+        text-align: left;
+    }
+
+    &__title-text {
+        font-weight: 500;
+        @include res("font-size", 76px);
+        text-align: end;
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        @include res("gap", 12px);
+        @include res("margin-top", 48px);
+    }
+
+    &__main-img {
+        @include res("width", 822px);
+        @include res("height", 440px);
+        @include res("border-radius", 24px);
+        object-fit: cover;
+        @include media(576){
+            border: 1px solid #fff;
+        }
+    }
+
+    &__main-inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        @include res("gap", 12px);
+    }
+
+    &__main-users {
+        @include res("width", 360px);
+        @include res("height", 128px);
+        display: flex;
+        align-items: center;
+        @include res("padding", 16px);
+        @include res("border-radius", 24px);
+        border: solid #ffffff90;
+        overflow: hidden;
+        background: linear-gradient(103.91deg, rgba(255, 255, 255, 0.176) -5.61%, rgba(255, 255, 255, 0.068) 121.64%);
+        @include res('border-width', 1px);
+        color: $white;
+        position: relative;
+        z-index: 2;
+
+        &-el{
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 95%;
+            background: #0066FF;
+            filter: blur(5.8333333333vw);
+            @include res('height', 114px);
+            @include res('top', -21px);
+            @include media(576){
+                display: none;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            @include res("margin-left", 16px);
+
+            p {
+                font-weight: 600;
+                @include res("font-size", 27px);
+                @include res("line-height", 32px);
+            }
+
+            span {
+                @include res("font-size", 17px);
+                @include res("line-height", 20px);
+            }
+        }
+
+        img {
+            @include res("width", 144px);
+            @include res("height", 64px);
+            object-fit: cover;
+        }
+    }
+
+    &__main-info {
+        position: relative;
+        @include res("width", 360px);
+        @include res("height", 268px);
+        // @include res("padding", 16px);
+        @include res("border-radius", 24px);
+        color: $white;
+
+        p {
+            position: absolute;
+            @include res("left", 36px);
+            @include res("bottom", 36px);
+            // @include res("width", 210px);
+            @include res("font-size", 27px);
+            font-weight: 500;
+        }
+
+        img {
+            @include res("width", 360px);
+            @include res("height", 268px);
+            object-fit: cover;
+        }
+    }
+
+    &__inner-content {
+        display: flex;
+    }
+
+    @media screen and (max-width:576px) {
+        @include resa("margin-top", 32px);
+        @include resa("margin-bottom", 0px);
+
+        &__inner-info {
+            display: none;
+        }
+
+        &__inner-text {
+            @include resa('font-size', 47px);
+            text-align: start;
+        }
+        &__inner-subtext {
+            @include resa('font-size', 47px);
+            text-align: start;
+            margin: 0;
+        }
+        &__title-text {
+            @include resa('font-size', 47px);
+            text-align: start;
+        }
+
+        &__inner {
+            justify-content: flex-start;
+        }
+
+        &__inner-content {
+            flex-direction: column;
+        }
+
+        &__main {
+            flex-direction: column;
+            @include resa('gap', 12px);
+        }
+
+        &__main-img {
+            width: 100%;
+            @include resa('height', 250px);
+            @include resa('border-radius', 24px);
+            @include resa('border-width', 1px);
+        }
+
+        &__main-inner {
+            width: 100%;
+            @include resa('gap', 12px);
+        }
+
+        &__main-users {
+            width: 100%;
+            @include resa('padding-left', 16px);
+            @include resa('height', 128px);
+            @include resa('border-radius', 24px);
+            @include resa('border-width', 1px);
+
+            img {
+                @include resa('width', 130px);
+                @include resa('height', 58px);
+            }
+
+            div {
+                @include resa('margin-left', 16px);
+                p {
+                    font-weight: 600;
+                    @include resa('font-size', 27px);
+                    @include resa('line-height', 32px);
+                }
+    
+                span {
+                    @include resa('font-size', 16px);
+                    @include resa('line-height', 21px);
+                }
+            }
+        }
+
+        &__main-info {
+            width: 100%;
+            @include resa('height', 268px);
+            @include resa('border-radius', 24px);
+            overflow: hidden;
+
+            p {
+                @include resa('font-size', 27px);
+                @include resa('bottom', 36px);
+                @include resa('left', 36px);
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

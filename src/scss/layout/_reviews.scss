@@ -1,0 +1,165 @@
+.reviews{
+    @include res('padding-bottom', 80px);
+    @include media(576){
+        padding-bottom: 0;
+        @include resa('padding-top', 88px);
+    }
+    &__main{
+        width: 100%;
+    }
+    .swiper{
+        width: 100%;
+        &-wrapper{
+            display: flex;
+            width: max-content;
+        }
+        &-slide{
+            position: relative;
+            isolation: isolate;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            @include res('height', 440px);
+            @include res('width', 480px);
+            @include res('padding-top', 42px);
+            @include res('padding-left', 32px);
+            @include res('padding-right', 77px);
+            @include res('padding-bottom', 32px);
+            @include media(576){
+                @include resa('height', 280px);
+                @include resa('width', 344px);
+                @include resa('padding-top', 16px);
+                @include resa('padding-left', 16px);
+                @include resa('padding-right', 16px);
+                @include resa('padding-bottom', 24px);
+            }
+            
+        }
+    }
+
+    &__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        @include media(576){
+            display: none;
+        }
+        &.sm{
+            display: none;
+            @include media(576){
+                display: block;
+            }
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__pin{
+        position: absolute;
+        @include res('top', 4px);
+        @include res('right', 4px);
+        @include res('width', 75px);
+        @include res('height', 75px);
+        @include media(576){
+            @include resa('top', 4px);
+            @include resa('right', 10px);
+            @include resa('width', 44px);
+            @include resa('height', 44px);
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &__icon{
+        @include res('width', 57.76px);
+        @include res('width', 43.59px);
+        @include res('margin-bottom', 24px);
+        @include media(576){
+            order: -2;
+            @include resa('width', 42.4px);
+            @include resa('width', 32px);
+            @include resa('margin-bottom', 17px);
+        }
+        svg{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__p{
+        font-weight: 500;
+        line-height: 140%;
+        flex: 1 1 auto;
+        @include res('font-size', 24px);
+        @include media(576){
+            @include resa('font-size', 16px);
+        }
+    }
+
+    &__details{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include res('gap', 16px);
+        @include media(576){
+            order: -1;
+            @include resa('margin-bottom', 22px);
+            @include resa('gap', 16px);
+        }
+    }
+
+    &__img{
+        @include res('width', 56px);
+        @include res('height', 56px);
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include media(576){
+            @include resa('width', 48px);
+            @include resa('height', 48px);
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+
+    &__user{
+        display: flex;
+        flex-direction: column;
+        @include res('gap', 3px);
+        @include media(576){
+            @include resa('gap', 3px);
+        }
+    }
+
+    &__name{
+        font-weight: 600;
+        line-height: 140%;
+        color: #343434;
+        @include res('font-size', 18px);
+        @include media(576){
+            @include resa('font-size', 17px);
+        }
+    }
+
+    &__dolzhnost{
+        color: #343434;
+        opacity: 60%;
+        font-weight: 500;
+        @include res('font-size', 18px);
+        @include media(576){
+            @include resa('font-size', 17px);
+        }
+    }
+}

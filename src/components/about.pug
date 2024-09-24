@@ -1,0 +1,27 @@
+mixin about() 
+    .about#about 
+        .about__topbar 
+            span O компании 
+            a(href="catalog.html") Посмотреть каталог
+                img(src="@img/arrow-right.svg", alt="arrow" draggable="false")
+        .about__main 
+            p.about__main-item
+                | Вся наша продукция прошла обязательную 
+                span.about__main-subtext сертификацию
+                |  и соответствует самым 
+                span.about__main-subtext высоким
+                |  стандартам
+            a(href="catalog.html").about__more Посмотреть каталог
+                img(src="@img/arrow-right.svg", alt="arrow" draggable="false")
+            a(href="catalog.html?c=kioski").about__main-item
+                    img(src="@img/Mask group.png", alt="" draggable="false").about__main-card-img
+                    p Информационные киоски                
+            a(href="catalog.html?c=paneli").about__main-item
+                img(src="@img/laptop2.png", alt="" draggable="false").about__main-card-img
+                p Сенсорные панели
+            a(href="catalog.html?c=proc").about__main-item
+                img(src="@img/laptop3.png", alt="" draggable="false").about__main-card-img
+                p INtel core процессоры 
+            a(href="catalog.html?c=stend").about__main-item
+                img(src="@img/laptop4.png", alt="" draggable="false").about__main-card-img
+                p Мобильные стенды

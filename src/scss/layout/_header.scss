@@ -1,0 +1,215 @@
+// Шапка
+.header {
+    @include media(576){
+        border-bottom: solid #fff;
+        @include resa('border-width', 1px);
+    }
+    &__logo {
+        @include res("width", 50px);
+        @include res("height", 42px);
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        color: $white;
+        a {
+            text-decoration: none;
+            @include res("gap", 24px);
+            @include res("margin-left", 64px);
+            @include res("font-size", 17px);
+            @include res("line-height", 20px);
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res("width", 888px);
+        @include res("padding-top", 37px);
+        @include res("padding-bottom", 37px);
+        margin: 0 auto;
+        @include media(576){
+            @include resa("padding-top", 13px);
+            @include resa("padding-bottom", 13px);
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__btn {
+        color: $white;
+        background-color: #2B73DC;
+        @include res("border-radius", 42px);
+        @include res("height", 42px);
+        @include res("padding", 16px);
+        @include res("padding-top", 10px);
+        @include res("padding-bottom", 10px);
+        font-weight: 400;
+        @include res("font-size", 17px);
+        @include res("line-height", 21.5px);
+        @include res("letter-spacing", -0.4px);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__button {
+        @include resa('width', 30px);
+        @include resa('height', 30px);
+        position: relative;
+        border: none;
+        outline: none;
+        background: none;
+        display: none;
+    
+        @include media(576) {
+          display: block;
+        }
+
+        &.open {
+
+            .header__button-line,
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(135deg);
+            }
+
+            &::after {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-135deg);
+            }
+        }
+
+        &::before,
+        &::after,
+        &-line {
+            transition: 0.5s;
+            position: absolute;
+            content: "";
+            left: 0;
+            width: 100%;
+            @include resa('height', 3px);
+            background: #297FFF;
+            @include resa('border-radius', 4px);
+        }
+
+        &::before {
+            top: 20%;
+        }
+
+        &::after {
+            bottom: 20%;
+        }
+
+        &-line {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__menu{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 100;
+        background: #000;
+        display: none;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        // height: calc(100% - 17.6020408163vw);
+        transition: 300ms ease-out;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        @include resa('top', 69px);
+        @include resa('gap', 20px);
+        @include resa('padding-left', 20px);
+        @include resa('padding-top', 40px);
+        @include resa('padding-bottom', 40px);
+        &.open{
+            opacity: 1;
+            visibility: visible;
+        }
+        @include media(576){
+            display: flex;
+        }
+
+        &-link{
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            @include resa('font-size', 24px);
+            &.mta{
+                margin-top: auto;
+            }
+        }
+    }
+
+    &__inner-burger {
+        display: none;
+    }
+
+    @media screen and (max-width:576px) {
+        .header__inner a{
+            @include resa('margin-right', 35px);
+        }
+        .header__logo{
+            margin-right: 0;
+        }
+        
+        &__main {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__nav {
+            display: none;
+        }
+        
+        &__inner-burger {
+            display: block;
+            @include resa("margin-right", 68px);
+
+            img {
+                @include resa('width', 32px);
+                @include resa('height', 32px);
+            }
+        }
+
+        &__btn {
+            @include resa('font-size', 16px);
+            @include resa('height', 42px);
+            @include resa('border-radius', 42px);
+            @include resa('padding-top', 10px);
+            @include resa('padding-bottom', 10px);
+            @include resa('padding-left', 16px);
+            @include resa('padding-right', 16px);
+        }
+
+        &__main {
+            width: 100%;
+        }
+
+        &__logo {
+            @include resa('width', 40px);
+            @include resa('height', 34px);
+            @include resa('margin-right', 35px);
+        }
+
+        &__inner {
+            justify-content: space-between;
+            flex: 1 auto;
+        }
+    }
+}

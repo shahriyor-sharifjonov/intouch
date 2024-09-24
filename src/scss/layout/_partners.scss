@@ -1,0 +1,102 @@
+.partners {
+    &__topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include res("margin-bottom", 24px);
+
+        span {
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ebebeb;
+            font-weight: 400;
+            width: auto;
+            @include res("height", 44px);
+            @include res("border-radius", 44px);
+            @include res("font-size", 17px);
+            @include res("padding-left", 16px);
+            @include res("padding-right", 16px);
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        @include res("padding-left", 37px);
+        @include res("padding-right", 37px);
+        @include res("padding-top", 24px);
+        @include res("padding-bottom", 24px);
+
+        .swiper{
+            width: 100vw;
+            overflow: hidden;
+            @include res('margin-left', -156px);
+        }
+
+        .swiper-wrapper{
+            width: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .swiper-slide{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img {
+            @include res("height", 56px);
+            max-width: 80%;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        @include resa('padding-top', 88px);
+        &__topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            span {
+                color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #ebebeb;
+                font-weight: 400;
+                @include resa('height', 44px);
+                width: auto;
+                @include resa('border-radius', 44px);
+                @include resa('font-size', 17px);
+                @include resa('padding-right', 16px);
+                @include resa('padding-left', 16px);
+                @include resa('margin-bottom', 16px);
+            }
+    
+            a {
+                display: none;
+            }
+        }
+
+        &__main {
+            flex-wrap: wrap;
+            @include resa('gap', 24px);
+            .swiper{
+                width: 100vw;
+                @include resa('margin-left', -25px);
+            }
+            img {
+                max-width: 80%;
+                display: flex;
+                justify-content: flex-start;
+                @include resa('height', 30px);
+            }
+        }
+    }
+}

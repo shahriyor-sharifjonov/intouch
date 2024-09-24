@@ -1,0 +1,94 @@
+mixin item(img)
+    button(type="button" data-target="#productPopup").catalog__item.popup-open 
+        .catalog__item-img 
+            img(src=img, alt="" draggable="false")
+            span.catalog__item-span Новинка
+        .catalog__item-content
+            p.catalog__item-price от 6 300 000 сум
+            p.catalog__item-title Горизонтальный сенсорный инфокиоск 43″ black
+            p.catalog__item-btn Заказать
+
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Каталог - Intouch
+    body 
+        .wrapper 
+            include components/header 
+            +header 
+            main.main 
+                .container 
+                    include components/hero 
+                    +hero-2 
+                    .catalog 
+                        h1.catalog__title Каталог товаров
+                        .catalog__menu 
+                            button(type="button" data-target="#panel").catalog__btn.active Сенсорные панели 
+                            button(type="button" data-target="#kiosk").catalog__btn Информационные киоски 
+                            button(type="button" data-target="#stend").catalog__btn Мобильные стенды
+                            button(type="button" data-target="#proccessor").catalog__btn Процессоры
+                            button(type="button" data-target="#accessories").catalog__btn Аксессуары
+                        .catalog__content.active#panel 
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                            +item("@img/product-1.png")
+                        .catalog__content#kiosk 
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                            +item("@img/product-2.png")
+                        .catalog__content#stend 
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                            +item("@img/product-3.png")
+                        .catalog__content#proccessor 
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                            +item("@img/product-5.png")
+                        .catalog__content#accessories 
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+                            +item("@img/product-4.png")
+            include components/popupProduct  
+            +popupProduct
+            +popupCallback
+            +popupOrder
+            +popupVideo
+            include components/footer
+            +footer
+        //- script(src="//code.jivosite.com/widget/6z1VSpkLX0" async)
+        script(src="js/app.min.js")

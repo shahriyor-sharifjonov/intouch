@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/style.min.css")
+        title Intouch - Лучшее качество только с нами
+    body 
+        .wrapper
+            include components/header 
+            +header  
+            main.main 
+                .container 
+                    include components/hero 
+                    include components/about 
+                    include components/mission 
+                    include components/product 
+                    include components/whyus 
+                    include components/reviews 
+                    include components/partners 
+                    include components/contact 
+                    +hero
+                    +about
+                    +mission
+                    +product
+                    +whyus 
+                    +reviews 
+                    +partners 
+                    +contact 
+            include components/footer
+            include components/popupProduct  
+            +popupProduct
+            +popupOrder
+            +popupCallback
+            +popupVideo
+            +footer
+        //- script(src="//code.jivosite.com/widget/6z1VSpkLX0" async)
+        script(src="js/app.min.js") 

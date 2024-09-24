@@ -1,0 +1,119 @@
+mixin popupOrder()
+    .popup#order 
+        .popup-overlay.popup-close 
+        form(action="#").popup-inner.order 
+            button(type='button').popup-back.popup-close 
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.19191 7.19191C7.63823 6.7456 8.36184 6.7456 8.80816 7.19191L16 14.3829L23.1919 7.19191C23.6039 6.77993 24.2522 6.74824 24.7005 7.09684L24.8082 7.19191C25.2545 7.63823 25.2545 8.36184 24.8082 8.80816L17.6172 16L24.8082 23.1919C25.2201 23.6039 25.2518 24.2522 24.9032 24.7005L24.8082 24.8082C24.3618 25.2545 23.6382 25.2545 23.1919 24.8082L16 17.6172L8.80816 24.8082C8.39617 25.2201 7.74791 25.2518 7.29958 24.9032L7.19191 24.8082C6.7456 24.3618 6.7456 23.6382 7.19191 23.1919L14.3829 16L7.19191 8.80816C6.77993 8.39617 6.74824 7.74791 7.09684 7.29958L7.19191 7.19191Z" fill="white"/>
+                </svg>
+            .order__title Оформление заказа
+            input(type="text" placeholder="Ваше имя" required).order__input
+            input(type="text" placeholder="Контактный номер" required).order__input
+            textarea(placeholder="Коментарии").order__input.textarea
+            div.contact__form-check
+                input(type="checkbox" id="chk" required)
+                div
+                    label(for="chk") Подтверждаю свое согласие с условиями 
+                    a(href="#!") обработки персональных данных 
+            button.contact__form-btn Отправить
+
+mixin popupCallback()
+    .popup#callback 
+        .popup-overlay.popup-close 
+        form(action="#").popup-inner.order 
+            button(type='button').popup-back.popup-close 
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.19191 7.19191C7.63823 6.7456 8.36184 6.7456 8.80816 7.19191L16 14.3829L23.1919 7.19191C23.6039 6.77993 24.2522 6.74824 24.7005 7.09684L24.8082 7.19191C25.2545 7.63823 25.2545 8.36184 24.8082 8.80816L17.6172 16L24.8082 23.1919C25.2201 23.6039 25.2518 24.2522 24.9032 24.7005L24.8082 24.8082C24.3618 25.2545 23.6382 25.2545 23.1919 24.8082L16 17.6172L8.80816 24.8082C8.39617 25.2201 7.74791 25.2518 7.29958 24.9032L7.19191 24.8082C6.7456 24.3618 6.7456 23.6382 7.19191 23.1919L14.3829 16L7.19191 8.80816C6.77993 8.39617 6.74824 7.74791 7.09684 7.29958L7.19191 7.19191Z" fill="white"/>
+                </svg>
+            .order__title Заказать звонок 
+            input(type="text" placeholder="Ваше имя" required).order__input
+            input(type="text" placeholder="Контактный номер" required).order__input
+            textarea(placeholder="Коментарии").order__input.textarea
+            div.contact__form-check
+                input(type="checkbox" id="chk" required)
+                div
+                    label(for="chk") Подтверждаю свое согласие с условиями 
+                    a(href="#!") обработки персональных данных 
+            button.contact__form-btn Отправить
+
+
+mixin popupVideo()
+    .popup#video  
+        .popup-overlay.popup-close 
+        form(action="#").popup-inner.video 
+            button(type='button').popup-back.popup-close 
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.19191 7.19191C7.63823 6.7456 8.36184 6.7456 8.80816 7.19191L16 14.3829L23.1919 7.19191C23.6039 6.77993 24.2522 6.74824 24.7005 7.09684L24.8082 7.19191C25.2545 7.63823 25.2545 8.36184 24.8082 8.80816L17.6172 16L24.8082 23.1919C25.2201 23.6039 25.2518 24.2522 24.9032 24.7005L24.8082 24.8082C24.3618 25.2545 23.6382 25.2545 23.1919 24.8082L16 17.6172L8.80816 24.8082C8.39617 25.2201 7.74791 25.2518 7.29958 24.9032L7.19191 24.8082C6.7456 24.3618 6.7456 23.6382 7.19191 23.1919L14.3829 16L7.19191 8.80816C6.77993 8.39617 6.74824 7.74791 7.09684 7.29958L7.19191 7.19191Z" fill="white"/>
+                </svg>
+            video(src="files/video.MOV" controls id="missionvideo") 
+            
+
+
+mixin popupProduct()
+    .popupProduct.popup#productPopup 
+        .popup-overlay.popup-close 
+        .popup-inner 
+            button(type='button').popup-back.popup-close 
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.19191 7.19191C7.63823 6.7456 8.36184 6.7456 8.80816 7.19191L16 14.3829L23.1919 7.19191C23.6039 6.77993 24.2522 6.74824 24.7005 7.09684L24.8082 7.19191C25.2545 7.63823 25.2545 8.36184 24.8082 8.80816L17.6172 16L24.8082 23.1919C25.2201 23.6039 25.2518 24.2522 24.9032 24.7005L24.8082 24.8082C24.3618 25.2545 23.6382 25.2545 23.1919 24.8082L16 17.6172L8.80816 24.8082C8.39617 25.2201 7.74791 25.2518 7.29958 24.9032L7.19191 24.8082C6.7456 24.3618 6.7456 23.6382 7.19191 23.1919L14.3829 16L7.19191 8.80816C6.77993 8.39617 6.74824 7.74791 7.09684 7.29958L7.19191 7.19191Z" fill="white"/>
+                </svg>
+            .popup-left 
+                .swiper.gallery-top
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src="@img/product-1.png", alt="" draggable="false")
+                        .swiper-slide
+                            img(src="@img/product-2.png", alt="" draggable="false")
+                        .swiper-slide
+                            img(src="@img/product-3.png", alt="" draggable="false")
+                        .swiper-slide
+                            img(src="@img/product-4.png", alt="" draggable="false")
+                        .swiper-slide
+                            img(src="@img/product-1.png", alt="" draggable="false")
+                        .swiper-slide
+                            img(src="@img/product-2.png", alt="" draggable="false")
+                .swiper.gallery-thumbs
+                    .swiper-wrapper
+                        .swiper-slide
+                            .slide-container 
+                                img(src="@img/product-1.png", alt="" draggable="false")
+                        .swiper-slide
+                            .slide-container 
+                                img(src="@img/product-2.png", alt="" draggable="false")
+                        .swiper-slide
+                            .slide-container 
+                                img(src="@img/product-3.png", alt="" draggable="false")
+                        .swiper-slide
+                            .slide-container 
+                                img(src="@img/product-4.png", alt="" draggable="false")
+                        .swiper-slide
+                            .slide-container 
+                                img(src="@img/product-1.png", alt="" draggable="false")
+                        .swiper-slide
+                            .slide-container  
+                                img(src="@img/product-2.png", alt="" draggable="false")
+            .popup-right 
+                h2.popup-title Горизонтальный сенсорный инфокиоск 43″ silver
+                p.popup-price от 24 970 000 сум
+                .popup-char
+                    p.popup-char__title Технические характеристики
+                    ul 
+                        li  
+                            p Диагональ экрана: <span>43 дюймов</span>
+                        li  
+                            p Максимальное разрешение: <span>1920х1080 FullHD</span>
+                        li  
+                            p Соотношение сторон: <span>16:9</span>
+                        li  
+                            p Процессор съёмный: <span>Intel Core i3/i5/i7/i9</span>
+                        li  
+                            p Технология сенсора: <span>Инфракрасная до 10 касаний, TFT-LCD</span>
+                        li  
+                            p Операционная система: <span>Windows 10</span>
+                a(href="#").popup-download
+                    | Все характеристики
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.9999 15.7142C15.3944 15.7142 15.7142 16.034 15.7142 16.4285C15.7142 16.823 15.3944 17.1428 14.9999 17.1428H4.99993C4.60544 17.1428 4.28564 16.823 4.28564 16.4285C4.28564 16.034 4.60544 15.7142 4.99993 15.7142H14.9999ZM9.99993 1.42847C10.3944 1.42847 10.7142 1.74826 10.7142 2.14275V11.8463L14.4949 8.06625C14.7738 7.7873 15.2261 7.7873 15.505 8.06625C15.784 8.34519 15.784 8.79745 15.505 9.0764L10.505 14.0764C10.2261 14.3553 9.7738 14.3553 9.49485 14.0764L4.49485 9.0764C4.21591 8.79745 4.21591 8.34519 4.49485 8.06625C4.7738 7.7873 5.22606 7.7873 5.50501 8.06625L9.28564 11.8463V2.14275C9.28564 1.74826 9.60544 1.42847 9.99993 1.42847Z" fill="#2688EB"/>
+                    </svg>
+                button(type='button' data-target="#order").popup-open.popup-btn Оформить заказ
+                    
